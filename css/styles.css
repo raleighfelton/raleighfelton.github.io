@@ -14,16 +14,17 @@ h2{
 }
 
 .responsive-shape{
+    height: 500px;
+    width: 500px;
+    border-radius: 400px;
     background-image: linear-gradient(-136deg, #F48381 0%, #FFC396 99%);
-    -webkit-clip-path: polygon(0 100%, 50% 0, 100% 0, 50% 100%, 50%       100%, 0 100%);
-    height: 400px;
-    width: 400px;
     margin: auto;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     z-index: -1;
+
 }
 
 
@@ -39,7 +40,7 @@ h2{
   }
 
  .welcome {
-    font-size: 2vw;
+    font-size: 16px;
     text-align: center;
     letter-spacing: .05em;
     text-transform: uppercase;
