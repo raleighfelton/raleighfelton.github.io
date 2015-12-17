@@ -1,16 +1,29 @@
 h1 {
-	font-family: "europa",sans-serif;
-	font-weight: 700;
-	color: $black;
-	letter-spacing: .01em;
-	text-transform: uppercase;
-	font-size: 300px;
-	text-align: left;
-	line-height: .9em;
-	margin: 0px;
+  font-family: "europa",sans-serif;
+  font-weight: 700;
+  color: $black;
+  letter-spacing: .01em;
+  text-transform: uppercase;
+  text-align: left;
+  line-height: .9em;
+  margin: 0px;
 }
 h2{
-	font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', serif;
+  
+}
+
+.responsive-shape{
+    background-image: linear-gradient(-136deg, #F48381 0%, #FFC396 99%);
+    -webkit-clip-path: polygon(0 100%, 50% 0, 100% 0, 50% 100%, 50%       100%, 0 100%);
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
 }
 
 
@@ -20,13 +33,13 @@ h2{
     text-transform: uppercase;
     text-align: center;
     letter-spacing: .09em;
+    font-size: 15vw;
     
  
   }
 
  .welcome {
-
-    font-size: 16px;
+    font-size: 3vw;
     text-align: center;
     letter-spacing: .09em;
     text-transform: uppercase;
@@ -45,8 +58,8 @@ h2{
   }
 
   .horizontal {
-  	position: fixed;
+    position: fixed;
     left: -50px;
     top: 50%;
-  	-webkit-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
   }
