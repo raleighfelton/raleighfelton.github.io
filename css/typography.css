@@ -1,0 +1,19 @@
+h1 {
+  font-family: "europa",sans-serif;
+  font-weight: 700;
+  color: $black;
+  letter-spacing: .01em;
+  text-transform: uppercase;
+  text-align: left;
+  line-height: .9em;
+  margin: 0px;
+}
+
+h2{
+  font-family: 'PT Mono',sans-serif;
+  
+}
+
+p {
+  font-family: "europa",sans-serif;
+}

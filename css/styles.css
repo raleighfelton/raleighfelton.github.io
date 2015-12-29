@@ -1,17 +1,25 @@
-h1 {
-  font-family: "europa",sans-serif;
-  font-weight: 700;
-  color: $black;
-  letter-spacing: .01em;
-  text-transform: uppercase;
-  text-align: left;
-  line-height: .9em;
-  margin: 0px;
-}
-h2{
-  font-family: 'PT Mono',sans-serif;
-  
-}
+
+
+.panel {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+
+  }
+
+.horizontal {
+    position: fixed;
+    left: -85px;
+    top: 50%;
+    -webkit-transform: rotate(-90deg);
+  }
+
+.center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
 
 .responsive-shape{
     height: 500px;
@@ -24,43 +32,43 @@ h2{
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     z-index: -1;
-
 }
 
 
 
 .name {
-    font-size: 200px;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: .09em;
     font-size: 15vw;
-    
+    color: #fff;
+  }
+    @media screen and (min-width: 600px){
+      .name{
+        color: #FBE5D3;
+      } 
  
   }
 
- .welcome {
+
+
+.welcome {
     font-size: 16px;
     text-align: center;
     letter-spacing: .05em;
     text-transform: uppercase;
+    color: #FBE5D3;
 
   }
 
- .stage {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
+
+.about{
+    background-color: #FBE5D3;
   }
 
-  .horizontal {
-    position: fixed;
-    left: -50px;
+.yo{
+    position: absolute;
+    left: 50%;
     top: 50%;
-    -webkit-transform: rotate(-90deg);
+    transform: translateX(-50%) translateY(-50%);
   }
