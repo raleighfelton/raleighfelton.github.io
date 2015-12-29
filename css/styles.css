@@ -71,4 +71,9 @@
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
+    color: #585858;
+    width: 80vw;
+    height: 80vh;
+    font-size: 30px;
+    line-height: 38px;
   }
