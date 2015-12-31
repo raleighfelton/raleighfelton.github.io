@@ -20,8 +20,8 @@
     transform: translateX(-50%) translateY(-50%);
   }
 
-.content{
-  border: solid 18px #7B7B7B;
+.wrapper{
+  border: solid 18px #ECECEC;
 }
 
 .name {
@@ -39,7 +39,6 @@
     @media screen and (min-width: 600px){
       .name{
         color: #ECECEC;
-        text-align: center;
       } 
  
   }
