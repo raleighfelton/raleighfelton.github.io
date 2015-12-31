@@ -4,6 +4,11 @@
   position: relative;
   height: 600px;
   width: 100vw;
+}
+    @media screen and (min-width: 568px){
+      .panel{
+        height: 320px;
+      } 
   }
 
 .horizontal {
@@ -22,6 +27,7 @@
 
 .wrapper{
   border: solid 18px #ECECEC;
+  height: auto !important;
 }
 
 .name {
