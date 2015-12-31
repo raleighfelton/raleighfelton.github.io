@@ -9,9 +9,16 @@ h1 {
   margin: 0px;
 }
 
-h2{
+h2 {
   font-family: 'PT Mono',sans-serif;
   
+}
+
+h3{
+  font-family: 'PT Mono',sans-serif;
+  font-style: 10px;
+  margin: 0;
+  text-transform: uppercase;
 }
 
 p {
