@@ -5,10 +5,12 @@
   height: 600px;
   width: 100vw;
 }
-    @media screen and (min-width: 568px){
+    @media screen and (min-width: 568px) and (orientation: landscape){
       .panel{
         height: 320px;
-      } 
+      }
+
+
   }
 
 .horizontal {
