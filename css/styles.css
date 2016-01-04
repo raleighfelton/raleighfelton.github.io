@@ -58,7 +58,7 @@
     width: 60vw;
     text-transform: uppercase;
     letter-spacing: .09em;
-    font-size: 10vw;
+    font-size: 12vw;
     color: #ECECEC;
     text-align:  center;
 
@@ -66,6 +66,7 @@
     @media screen and (min-width: 600px){
       .name{
         color: #ECECEC;
+        font-size: 10vw;
       } 
  
   }
