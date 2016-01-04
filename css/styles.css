@@ -1,16 +1,20 @@
-
-
 .panel {
   position: relative;
   height: 600px;
-  width: 100vw;
 }
 
 .horizontal {
-    position: fixed;
-    left: -70px;
-    top: 50%;
-    -webkit-transform: rotate(-90deg);
+    display: none;
+  }
+  @media screen and (min-width: 600px){
+      .horizontal{
+        display: block;
+        position: fixed;
+        left: -70px;
+        top: 50%;
+        -webkit-transform: rotate(-90deg);
+      } 
+ 
   }
 
 .center{
@@ -25,6 +29,27 @@
   height: auto !important;
 }
 
+.main-nav ul{
+  list-style: none;
+  text-align: center;
+  padding: 0px;
+}
+
+.main-nav ul li{
+  display: inline;
+}
+ 
+
+.main-nav ul li a{
+  text-decoration: none;
+  color: #ccc;
+  padding: 0px 5px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+
+}
+
 .name {
     position: absolute;
     left: 50%;
@@ -35,6 +60,7 @@
     letter-spacing: .09em;
     font-size: 10vw;
     color: #ECECEC;
+    text-align:  center;
 
   }
     @media screen and (min-width: 600px){

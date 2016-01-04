@@ -16,11 +16,17 @@ h2 {
 
 h3{
   font-family: 'PT Mono',sans-serif;
-  font-style: 10px;
   margin: 0;
-  text-transform: uppercase;
 }
 
 p {
   font-family: "europa",sans-serif;
+}
+
+a {
+  font-family: 'PT Mono',sans-serif;
+}
+
+a:hover {
+    background-color: yellow;
 }
