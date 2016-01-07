@@ -85,7 +85,7 @@
 
 
 
-.yo{
+.yo {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -96,7 +96,40 @@
     color: #7B7B7B;
   }
 
+.yo a {
+  text-decoration: none;
+  color: #ccc;
+}
+
 .subheader{
   padding-bottom: 2px;
   border-bottom: 1px solid rgba(39,39,39,.04);
 }
+
+.main-nav a {
+  font-family: 'PT Mono',sans-serif;
+}
+
+.portfolio {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-thumb {
+  height: auto;
+  margin: 20px 10%;
+  text-align: center;
+}
+
+.project img {
+  margin: 20px 0px;
+  width: 100%; 
+  height: auto;
+}
+
+.project img:hover {
+  opacity: 0.9;
+}
+
+
