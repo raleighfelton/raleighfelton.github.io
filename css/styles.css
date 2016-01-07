@@ -36,19 +36,25 @@
 }
 
 .main-nav ul li{
-  display: inline;
+  padding: 8px 0px;
 }
+@media screen and (min-width: 500px){
+      .main-nav ul li{
+        display: inline;
+      } 
+ 
+  }
  
 
 .main-nav ul li a{
   text-decoration: none;
   color: #ccc;
-  padding: 0px 5px;
+  padding: 0px 10px;
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: .09em;
-
 }
+
 
 .name {
     position: absolute;
