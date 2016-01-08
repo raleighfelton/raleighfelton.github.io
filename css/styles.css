@@ -10,7 +10,7 @@
       .horizontal{
         display: block;
         position: fixed;
-        left: -70px;
+        left: -60px;
         top: 50%;
         -webkit-transform: rotate(-90deg);
       } 
@@ -53,6 +53,7 @@
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: .09em;
+  
 }
 
 
@@ -81,7 +82,7 @@
 
 
 .welcome {
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
     letter-spacing: .05em;
     text-transform: uppercase;
