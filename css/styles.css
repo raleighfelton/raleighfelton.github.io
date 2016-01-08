@@ -50,7 +50,7 @@
   text-decoration: none;
   color: #ccc;
   padding: 10px 10px;
-  font-size: 12px;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: .09em;
 }
@@ -114,6 +114,7 @@
 
 .main-nav a {
   font-family: 'PT Mono',sans-serif;
+
 }
 
 .portfolio {
