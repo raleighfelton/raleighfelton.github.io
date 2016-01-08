@@ -20,16 +20,10 @@ h3{
 }
 
 p {
-  font-family: "europa",sans-serif;
-}
-
-.main-nav a {
   font-family: 'PT Mono',sans-serif;
 }
 
-.yo a {
- font-family: "europa",sans-serif;
-}
+
 
 a:hover {
     background-color: yellow;
