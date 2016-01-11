@@ -25,19 +25,3 @@ p {
 
 
 
-a::before {
-  content: '';
-  width: 0%;
-  height: 4px;
-  background: #ECECEC;
-  position: absolute;
-  bottom: -5px;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
-}
-
-a:hover::before {
-  width: 100%;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
-}
