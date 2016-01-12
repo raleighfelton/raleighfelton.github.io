@@ -1,6 +1,9 @@
 .panel {
   height: 600px;
 }
+.panel-two{
+  padding: 40px 0px;
+}
 
 .horizontal {
   display: none;
