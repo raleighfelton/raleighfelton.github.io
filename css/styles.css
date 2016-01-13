@@ -1,6 +1,12 @@
 .panel {
-  height: 600px;
+  height: 400px;
 }
+@media screen and (min-width: 600px) {
+  .panel{
+    height: 600px;
+  }
+}
+
 .panel-two{
   padding: 40px 0px;
 }
