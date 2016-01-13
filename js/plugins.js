@@ -21,4 +21,18 @@
     }
 }());
 
-// Place any jQuery/helper plugins in here.
+
+
+// Adds animation to scroll to
+$('a[href^="#"]').on('click', function(event) {
+
+    var target = $( $(this).attr('href') );
+
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+
+});

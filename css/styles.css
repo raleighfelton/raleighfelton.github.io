@@ -89,8 +89,12 @@
 
 @media screen and (min-width: 600px) {
   .name {
-    color: #ECECEC;
     font-size: 10vw;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .name {
+    font-size: 190px;
   }
 }
 
@@ -118,6 +122,13 @@
 .yo a:hover {
   color: #4A4A4A;
 }
+
+.stat {
+  padding: 70px 0px;
+  text-align: left;
+}
+
+
 
 .subheader {
   padding-bottom: 2px;
@@ -153,7 +164,7 @@
 }
 
 .project-detail img {
-  margin: 20px 0px;
+  margin: 10px 0px;
   width: 100%;
   height: auto;
 }
@@ -166,6 +177,13 @@
   margin-top: 50px;
 }
 
+.project-title a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
 
 /**Responsive Vimeo*/
 
@@ -175,6 +193,7 @@
   height: 0;
   overflow: hidden;
   max-width: 100%;
+  margin: 10px 0px;
 }
 
 .embed-container iframe,
