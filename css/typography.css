@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=PT+Mono);`
+@import url(https://fonts.googleapis.com/css?family=PT+Mono);
 
 
 h1 {
@@ -26,4 +26,14 @@ p{
   font-size: 15px;
   line-height: 28px;
   font-family: 'PT Mono',sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: #ccc;
+  text-transform: uppercase;
+}
+
+a:hover {
+  color: #7B7B7B;
 }

@@ -190,6 +190,23 @@
   text-transform: uppercase;
 }
 
+.project-title a:hover {
+  text-decoration: none;
+  color: #7B7B7B;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.footer{
+  text-align: center;
+  margin: 25px 0px;
+}
+.footer a {
+  font-size: 12px;
+}
+.footer a:hover {
+  font-size: 12px;
+}
 
 /**Responsive Vimeo*/
 
