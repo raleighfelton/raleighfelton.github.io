@@ -83,7 +83,8 @@
 .name {
   position: absolute;
   left: 50%;
-  top: 50%;
+  /**top: 50%*/
+  margin: 256px 0px;
   transform: translateX(-50%) translateY(-50%);
   width: 60vw;
   text-transform: uppercase;
