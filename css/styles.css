@@ -84,7 +84,8 @@
 .name {
   position: absolute;
   left: 50%;
-  top: 50%;
+  /**top: 50%*/
+  margin: 256px 0px;
   transform: translateX(-50%) translateY(-50%);
   width: 60vw;
   text-transform: uppercase;
@@ -97,11 +98,16 @@
 @media screen and (min-width: 600px) {
   .name {
     font-size: 10vw;
+    top: 50%;
+    margin: 0px;
   }
 }
 @media screen and (min-width: 1400px) {
   .name {
     font-size: 190px;
+    top: 50%;
+    margin: 0px;
+
   }
 }
 
