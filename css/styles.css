@@ -126,6 +126,12 @@
   color: #7B7B7B;
   margin: 0px auto;
 }
+@media screen and (min-width: 1100px) {
+  .yo {
+    width: 45vw;
+
+  }
+}
 
 .yo a {
   text-decoration: none;
@@ -210,6 +216,7 @@
 }
 .footer a {
   font-size: 12px;
+  text-transform: uppercase;
 }
 .footer a:hover {
   font-size: 12px;
