@@ -211,8 +211,9 @@
 }
 
 .footer{
+  width: 45vw;
   text-align: center;
-  margin: 25px 0px;
+  margin: 0px auto 35px;
 }
 .footer a {
   font-size: 12px;
