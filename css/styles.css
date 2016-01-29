@@ -218,6 +218,7 @@
 .footer a {
   font-size: 12px;
   text-transform: uppercase;
+  font-family: 'PT Mono',sans-serif;
 }
 .footer a:hover {
   font-size: 12px;
