@@ -114,27 +114,93 @@
     color: #4A4A4A;
     letter-spacing: 0.64px;
     line-height: 23px;
-    margin: 0px auto;
+    margin: 30% auto;
   }
   @media screen and (min-width: 1100px) {
   .intro {
-    width: 35vw;
+    width: 300px;
+    margin: 30% 100px;
+  }
+}
+
+.intro-two {
+    width: 65vw;
+    color: black;
+    font-size: 15px;
+    color: #4A4A4A;
+    letter-spacing: 0.64px;
+    line-height: 23px;
+    margin: 35% 500px;
+}
+  @media screen and (min-width: 1100px) {
+  .intro-two {
+    width: 300px;
 
   }
 }
 
 .callout {
+  width: 65vw;
   text-align: center;
-  font-size: 95.99px;
+  font-size: 95px;
   color: #4A4A4A;
   letter-spacing: 3.84px;
   line-height: 75.19px;
   max-width: 817px;
   margin: 100px auto;
-  font-family: "futura-pt",sans-serif;
+  font-family: FuturaPT-Heavy, "futura-pt",sans-serif;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 700;
 }
+
+.quote{
+  font-family: FuturaPT-Heavy, "futura-pt",sans-serif;
+  font-size: 46px;
+  mix-blend-mode: overlay;
+  color: #FFFFFF;
+  letter-spacing: 1.83px;
+  line-height: 37px;
+  max-width: 409px;
+  float: right;
+  margin: 150px 200px 0px;
+}
+
+.kelly {
+  font-family: FuturaPT-Heavy, "futura-pt",sans-serif;
+  font-size: 24px;
+}
+
+/*lines experiment 
+.lines {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  height: 420px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
+
+.lines .line {
+  height: 100%;
+  width: 1px;
+  background: #EBEBEB;
+}
+
+*/
 
 
 
@@ -153,6 +219,7 @@
   }
   #group2 .parallax__layer--back {
     background-image: url("../images/header-bkgd.jpg");
+    background-size: cover;
 
   }
 
@@ -167,7 +234,7 @@
     z-index: 2; /* slide under group 3 and 5 */
   }
   #group4 .parallax__layer--deep {
-    background: grey;
+    background: white;
   }
 
   #group5 {
@@ -181,7 +248,8 @@
     z-index: 2; /* slide under group 5 and 7 */
   }
   #group6 .parallax__layer--back {
-    background: rgb(245,235,100);
+       background-image: url("../images/barrel.jpg");
+    background-size: cover;
   }
 
   #group7 {
