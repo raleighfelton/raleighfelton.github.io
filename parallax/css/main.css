@@ -9,6 +9,13 @@
     -webkit-perspective: 300px;
     perspective: 300px;
   }
+  .parallax__header {
+    position: relative;
+    height: 1080px; /* fallback for older browsers */
+    /*height: 100vh;*/
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
 
   .parallax__group {
     position: relative;
@@ -92,10 +99,13 @@
     text-transform: uppercase;
     font-family: Futura-CondensedExtraBold;
     font-size: 110px;
-    color: #FFFFFF;
+    color: #fff;
     line-height: 88px;
-    text-shadow: 0px 2px 4px rgba(0,0,0,0.50);
     margin: 90px;
+  }
+
+  .title span{
+    background-color: black;
   }
   .experience {
     font-family: 'Stone Harbour';
@@ -108,34 +118,35 @@
   }
 
   .intro {
-    width: 65vw;
+    width: 300px;
     color: black;
     font-size: 15px;
     color: #4A4A4A;
     letter-spacing: 0.64px;
     line-height: 23px;
-    margin: 30% auto;
+    margin: 30% 20%;
   }
   @media screen and (min-width: 1100px) {
   .intro {
     width: 300px;
-    margin: 30% 100px;
+    margin: 30% 200px;
   }
 }
 
 .intro-two {
-    width: 65vw;
+    width: 300px;
     color: black;
     font-size: 15px;
     color: #4A4A4A;
     letter-spacing: 0.64px;
     line-height: 23px;
-    margin: 35% 500px;
+    margin: 35% 100px;
+    float: right;
 }
   @media screen and (min-width: 1100px) {
   .intro-two {
     width: 300px;
-
+    margin: 30% 200px;
   }
 }
 
@@ -148,13 +159,13 @@
   line-height: 75.19px;
   max-width: 817px;
   margin: 100px auto;
-  font-family: FuturaPT-Heavy, "futura-pt",sans-serif;
+  font-family: FuturaPT-Heavy, "futura-pt", sans-serif;
   font-style: normal;
   font-weight: 700;
 }
 
 .quote{
-  font-family: FuturaPT-Heavy, "futura-pt",sans-serif;
+  font-family: FuturaPT-Heavy, "futura-pt", sans-serif;
   font-size: 46px;
   mix-blend-mode: overlay;
   color: #FFFFFF;
@@ -170,7 +181,7 @@
   font-size: 24px;
 }
 
-/*lines experiment 
+/*lines experiment
 .lines {
   display: -webkit-box;
   display: -moz-box;
@@ -188,11 +199,15 @@
   -o-justify-content: space-between;
   justify-content: space-between;
   -ms-flex-pack: justify;
-  height: 420px;
-  margin: 0 auto;
-  position: relative;
+  height: 100%;
+  position: fixed;
+  width: 1024px;
+  max-width: 1130px;
   z-index: 10;
-}
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}*/
 
 .lines .line {
   height: 100%;
@@ -200,7 +215,6 @@
   background: #EBEBEB;
 }
 
-*/
 
 
 
@@ -211,7 +225,8 @@
     z-index: 5; /* slide over group 2 */
   }
   #group1 .parallax__layer--base {
-        background: black;
+    background-image: url("../images/header.jpg");
+    background-size: cover;
   }
 
   #group2 {
@@ -241,15 +256,15 @@
     z-index: 3; /* slide over group 4 and 6 */
   }
   #group5 .parallax__layer--base {
-    background: rgb(214,229,100);
+    background-image: url("../images/barrel.jpg");
+    background-size: cover;
   }
 
   #group6 {
     z-index: 2; /* slide under group 5 and 7 */
   }
   #group6 .parallax__layer--back {
-       background-image: url("../images/barrel.jpg");
-    background-size: cover;
+    background: red;
   }
 
   #group7 {
