@@ -1,6 +1,9 @@
 .panel {
   position: relative;
   height: 450px;
+  background-position:center;
+  background-image: url(../images/header_background.gif);
+}
 }
 @media screen and (min-width: 600px) {
   .panel{
@@ -34,7 +37,7 @@
 }
 
 .wrapper {
-  border: solid 18px #ECECEC;
+  border: solid 18px #fff;
   height: auto !important;
 }
 
@@ -42,6 +45,7 @@
   list-style: none;
   text-align: center;
   padding: 0px;
+  margin-top: 0px;
 }
 
 .main-nav ul li {
@@ -57,11 +61,12 @@
 .main-nav ul li a {
   position: relative;
   text-decoration: none;
-  color: #ccc;
-  padding: 10px 0px;
+  color: #fb00eb;
+  padding: 10px 10px;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: .09em;
+  background-color: #ffffff;
 }
 
 .main-nav ul li a::before {
@@ -93,6 +98,7 @@
   font-size: 12vw;
   color: #ECECEC;
   text-align: center;
+  text-shadow: 5px 5px 10px rgba(0,0,0,0.50);
 }
 
 @media screen and (min-width: 600px) {
@@ -100,6 +106,7 @@
     font-size: 10vw;
     top: 50%;
     margin: 0px;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -107,6 +114,7 @@
     font-size: 190px;
     top: 50%;
     margin: 0px;
+    text-align: center;
 
   }
 }
@@ -146,8 +154,6 @@
   padding: 70px 0px;
   text-align: left;
 }
-
-
 
 .subheader {
   padding-bottom: 2px;
