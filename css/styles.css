@@ -62,7 +62,7 @@
       text-decoration: none;
       color: #ffffff;
       /* padding: 10px 10px; */
-      font-size: 14px;
+      font-size: 0.875em;
       text-transform: uppercase;
       letter-spacing: .09em;
 }
@@ -87,21 +87,17 @@
 .name {
   position: absolute;
   left: 50%;
-  /**top: 50%*/
   margin: 256px 0px;
   transform: translateX(-50%) translateY(-50%);
-  width: 60vw;
   text-transform: uppercase;
   letter-spacing: .09em;
-  font-size: 12vw;
   color: #fff;
   text-align: center;
-  //text-shadow: 5px 5px 10px rgba(0,0,0,0.50);
 }
 
 @media screen and (min-width: 600px) {
   .name {
-    font-size: 10vw;
+    font-size: 6em;
     top: 50%;
     margin: 0px;
     text-align: center;
@@ -109,7 +105,7 @@
 }
 @media screen and (min-width: 1400px) {
   .name {
-    font-size: 190px;
+    font-size: 8em;
     top: 50%;
     margin: 0px;
     text-align: center;
@@ -126,11 +122,12 @@
 }
 
 .yo {
-  width: 65vw;
-  font-size: 18px;
+  width: 72vw;
+  font-size: 1em;
   line-height: 32px;
   color: #7B7B7B;
   margin: 0px auto;
+  max-width: 600px;
 }
 @media screen and (min-width: 1000px) {
   .yo {
