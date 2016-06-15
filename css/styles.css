@@ -125,6 +125,7 @@
   width: 72vw;
   font-size: 1em;
   line-height: 32px;
+  letter-spacing: 0.01em;
   color: #7B7B7B;
   margin: 0px auto;
   max-width: 600px;
@@ -142,7 +143,7 @@
 
 .yo a {
   text-decoration: none;
-  color: #ccc;
+  color: #fedbcf;
 }
 
 .yo a:hover {
@@ -159,9 +160,7 @@
   border-bottom: 1px solid rgba(39, 39, 39, .04);
 }
 
-.main-nav a {
-  font-family: 'PT Mono', sans-serif;
-}
+
 
 .portfolio {
   height: auto;
