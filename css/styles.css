@@ -1,10 +1,10 @@
 .panel {
   position: relative;
-  height: 450px;
+  height: 460px;
   background-image: linear-gradient(-166deg, #FED9CD 10%, #FFF0EA 90%);
 }
-}
-@media screen and (min-width: 600px) {
+
+@media screen and (min-width: 320px){
   .panel{
     height: 600px;
   }
@@ -14,9 +14,9 @@
   padding: 40px 0px;
 }
 
-.horizontal {
+/*.horizontal {
   display: none;
-}
+}*/
 
 @media screen and (min-width: 600px) {
   .horizontal {
@@ -132,7 +132,11 @@
 @media screen and (min-width: 1000px) {
   .yo {
     width: 50vw;
-
+  }
+}
+@media screen and (min-width: 440px) {
+  .yo {
+    margin: 102px auto;
   }
 }
 
