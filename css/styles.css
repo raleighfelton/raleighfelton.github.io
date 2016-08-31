@@ -44,19 +44,21 @@
 .main-nav ul {
   list-style: none;
   text-align: center;
-  padding: 16px 0px 0px;
+  padding: 16px 40px 0px;
   margin-top: 0px;
+}
+@media screen and (min-width: 600px) {
+  .main-nav ul{
+    padding: 16px 0px 0px;
+  }
 }
 
 .main-nav ul li {
   padding: 8px 10px;
+  display: inline;
 }
 
-@media screen and (min-width: 500px) {
-  .main-nav ul li {
-    display: inline;
-  }
-}
+
 
 .main-nav ul li a {
   position: relative;
