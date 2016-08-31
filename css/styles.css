@@ -7,7 +7,7 @@
 
 @media screen and (min-width: 600px){
   .panel{
-    height: 800px;
+    height: 600px;
   }
 }
 
@@ -55,8 +55,16 @@
 
 .main-nav ul li {
   padding: 8px 10px;
-  display: inline;
+  display: block;
+  float: left;
 }
+@media screen and (min-width: 500px) {
+  .main-nav ul li{
+    display: inline;
+    float: none;
+  }
+}
+
 
 
 
