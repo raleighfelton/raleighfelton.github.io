@@ -1,7 +1,8 @@
 .panel {
   position: relative;
   height: 400px;
-  background-image: linear-gradient(-166deg, #FED9CD 10%, #FFF0EA 90%);
+  /*background-image: linear-gradient(-166deg, #FED9CD 10%, #FFF0EA 90%);*/
+
 }
 
 @media screen and (min-width: 600px){
@@ -36,7 +37,7 @@
 }
 
 .wrapper {
-  border: solid 18px #fff;
+  border: solid 18px #fbfbfb;
   height: auto !important;
 }
 
@@ -59,19 +60,19 @@
 
 .main-nav ul li a {
   position: relative;
-      text-decoration: none;
-      color: #ffffff;
+  text-decoration: none;
+  color: #4a4a4a;
       /* padding: 10px 10px; */
-      font-size: 0.875em;
-      text-transform: uppercase;
-      letter-spacing: .09em;
+  font-size: 0.875em;
+  text-transform: uppercase;
+  letter-spacing: .09em;
 }
 
 .main-nav ul li a::before {
   content: '';
   width: 0%;
   height: 4px;
-  background: #fff;
+  background: #4a4a4a;
   position: absolute;
   bottom: -5px;
   -webkit-transition: all .2s ease;
@@ -91,7 +92,7 @@
   transform: translateX(-50%) translateY(-50%);
   text-transform: uppercase;
   letter-spacing: .09em;
-  color: #fff;
+  color: #4a4a4a;
   text-align: center;
 }
 
@@ -113,13 +114,6 @@
   }
 }
 
-.welcome {
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: .05em;
-  text-transform: uppercase;
-  color: #ECECEC;
-}
 
 .yo {
   width: 72vw;
