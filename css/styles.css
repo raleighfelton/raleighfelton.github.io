@@ -44,7 +44,7 @@
 .main-nav ul {
   list-style: none;
   text-align: center;
-  padding: 16px 40px 0px;
+  padding: 16px 20px 0px;
   margin-top: 0px;
 }
 @media screen and (min-width: 600px) {
