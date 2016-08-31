@@ -106,23 +106,15 @@
   text-align: center;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 900px) {
   .name {
-    font-size: 6em;
+    font-size: 8rem;
     top: 50%;
     margin: 0px;
     text-align: center;
   }
 }
-@media screen and (min-width: 1400px) {
-  .name {
-    font-size: 8em;
-    top: 50%;
-    margin: 0px;
-    text-align: center;
 
-  }
-}
 
 
 .yo {
