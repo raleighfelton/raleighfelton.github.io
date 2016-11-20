@@ -2,12 +2,11 @@
 
 
 h1 {
-  font-family: "essonnes-display",sans-serif;
+  font-family: "futura-pt",sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 11vw;
   color: $black;
-  letter-spacing: .01em;
   text-transform: uppercase;
   text-align: center;
   line-height: .9em;
