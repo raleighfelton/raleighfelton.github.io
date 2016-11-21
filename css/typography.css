@@ -5,11 +5,12 @@ h1 {
   font-family: "futura-pt",sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 11vw;
+  font-size: 20vw;
   color: $black;
   text-transform: uppercase;
   text-align: center;
-  line-height: .9em;
+  letter-spacing: -.07em;
+  line-height: .7em;
   margin: 0px;
 }
 
