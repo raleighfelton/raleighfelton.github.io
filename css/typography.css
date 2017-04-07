@@ -2,9 +2,10 @@
 
 
 h1 {
-  font-family: "futura-pt",sans-serif;
+  font-family: "futura-pt-bold",sans-serif;
   font-style: normal;
   font-weight: 700;
+  font-style: normal;
   font-size: 20vw;
   color: $black;
   text-transform: uppercase;
