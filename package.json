@@ -1,0 +1,41 @@
+{
+  "name": "raleighfelton.github.io",
+  "version": "2.0.0",
+  "description": "Portfolio of Design  Raleigh Felton",
+  "main": "index.js",
+  "dependencies": {
+    "normalize.css": "^6.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "cssnext": "^1.8.4",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.4.0",
+    "gulp-pxtorem": "^2.0.0",
+    "normalize.css": "^6.0.0",
+    "postcss-pxtorem": "^4.0.0",
+    "precss": "^1.4.0",
+    "reset-css": "^2.2.0",
+    "stylelint-order": "^0.4.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raleighfelton/raleighfelton.github.io.git"
+  },
+  "keywords": [
+    "designer",
+    "code",
+    "start-up",
+    "product",
+    "design"
+  ],
+  "author": "raleigh felton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raleighfelton/raleighfelton.github.io/issues"
+  },
+  "homepage": "https://github.com/raleighfelton/raleighfelton.github.io#readme"
+}
