@@ -7,7 +7,8 @@
 @import "1_settings/variables";
 
 /* 2_elements */
-@import "/2_elements/typography";
+@import "2_elements/typography";
+@import "2_elements/images";
 
 /* 3_components */
 /* 4_layout */

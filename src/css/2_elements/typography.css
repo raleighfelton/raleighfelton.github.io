@@ -8,3 +8,15 @@ h3 {  font-size: var(--font-size-xl); }
 h4 {  font-size: 40px; }
 h5 {  font-size: var(--font-size-lg); }
 h6 {  font-size: var(--font-size); }
+
+mark {
+  background-color: var(--color-eltric-green,);
+}
+
+.highlight {
+  font-size:14px;
+  line-height: 28px;
+  margin: 5%;
+  position: absolute;
+  z-index: 100;
+}

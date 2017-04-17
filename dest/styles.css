@@ -319,6 +319,28 @@ h3 {  font-size: 3rem; }
 h4 {  font-size: 2.5rem; }
 h5 {  font-size: 1.5rem; }
 h6 {  font-size: 1rem; }
+mark {
+  background-color: #00FF80;
+}
+.highlight {
+  font-size:0.875rem;
+  line-height: 1.75rem;
+  margin: 5%;
+  position: absolute;
+  z-index: 100;
+}
+.background--image {
+  /*background-color: #fff;*/
+  background-image:url("/images/raleighfelton.jpg");
+  background-position: center
+}
+@media screen and (min-width: 980px) {
+  .background--image {
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+  }
+  }
 /* 3_components */
 /* 4_layout */
 /* 5_helpers */
