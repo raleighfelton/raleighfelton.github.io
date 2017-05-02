@@ -310,8 +310,11 @@ template {
 /* 1_settings */
 /*@import "1_settings/reset";*/
 /* 2_elements */
-h1, h2, h3, h4, h5, h6, a, button {
+h1, h2, h3, h4, a, button {
   font-family: "futura-pt-bold","europa",sans-serif;
+}
+h5, h6, p {
+  font-family: "europa",sans-serif;
 }
 h1 {  font-size: 7.5rem; }
 h2 {  font-size: 5rem; }
@@ -319,29 +322,49 @@ h3 {  font-size: 3rem; }
 h4 {  font-size: 2.5rem; }
 h5 {  font-size: 1.5rem; }
 h6 {  font-size: 1rem; }
-mark {
-  background-color: #00FF80;
-}
-.highlight {
-  font-size:0.875rem;
-  line-height: 1.75rem;
+/*mark {
+  background-color: var(--color-eltric-green,);
+}*/
+/*.highlight {
+  font-size:14px;
+  line-height: 28px;
   margin: 5%;
   position: absolute;
-  z-index: 100;
-}
-.background--image {
-  /*background-color: #fff;*/
-  background-image:url("/images/raleighfelton.jpg");
-  background-position: center
-}
-@media screen and (min-width: 980px) {
-  .background--image {
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 100vh;
-  }
-  }
+}*/
 /* 3_components */
+.c-background-image {
+  background-image: url("/images/raleighfelton.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+  /*@media screen and (min-width: 980px) {
+  }*/
+}
+.c-wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  margin: 0 auto;
+  /* justify-content: center; */
+  max-width: 1028px;
+  background-color: blue;
+}
 /* 4_layout */
+.c-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*background-color: red;*/
+  max-width: 500px;
+  position: absolute;
+  z-index: 100
+}
+.c-content__p {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  padding: 16px;
+}
 /* 5_helpers */
 /* 6_vendor_overrides */

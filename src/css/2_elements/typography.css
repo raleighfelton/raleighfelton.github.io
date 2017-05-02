@@ -1,5 +1,9 @@
-h1, h2, h3, h4, h5, h6, a, button {
+h1, h2, h3, h4, a, button {
   font-family: var(--font-family-bold);
+}
+
+h5, h6, p {
+  font-family: var(--font-family-regular);
 }
 
 h1 {  font-size: var(--font-size-xxxl); }
@@ -9,14 +13,13 @@ h4 {  font-size: 40px; }
 h5 {  font-size: var(--font-size-lg); }
 h6 {  font-size: var(--font-size); }
 
-mark {
+/*mark {
   background-color: var(--color-eltric-green,);
-}
+}*/
 
-.highlight {
+/*.highlight {
   font-size:14px;
   line-height: 28px;
   margin: 5%;
   position: absolute;
-  z-index: 100;
-}
+}*/

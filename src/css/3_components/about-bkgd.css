@@ -1,0 +1,9 @@
+.c-background-image {
+  background-image: url("/images/raleighfelton.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+  /*@media screen and (min-width: 980px) {
+  }*/
+}

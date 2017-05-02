@@ -1,0 +1,13 @@
+.c-content {
+  display: flex;
+  /*background-color: red;*/
+  max-width: 500px;
+  position: absolute;
+  z-index: 100;
+
+  &__p {
+    font-size: var(--font-size-lg);
+    line-height: var(--font-size-xl);
+    padding: var(--spacing);
+  }
+}
