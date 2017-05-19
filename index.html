@@ -21,66 +21,91 @@
 
 </head>
 <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-            <![endif]-->
-            <div class="wrapper">
-              <nav class="main-nav">
-                  <ul>
-                      <li><a href="#work">Work</a></li>
-                      <li><a href="http://dribbble.com/raleighfelton" target="blank">Dribbble</a></li>
-                      <li><a href="https://medium.com/@raleighfelton" target="blank">Writing</a></li>
-                      <li><a href="https://vimeo.com/raleighfelton" target="blank">Video</a></li>
-                      <li><a href="http://twitter.com/raleighfelton" target="blank">Twitter</a></li>
-                  </ul>
-              </nav>
-                <div class="panel">
-                    <h1 class="name">Raleigh</br>Felton</h1>
-                    <div class="title">Designer</div>
-                </div>
+
+  <button class="nav nav__btn" type="button">
+	  <span class="bar"></span>
+  </button>
+
+  <nav>
+    <ul>
+      <li>
+        <h5 class="nav__subtitle">Selected</h5>
+        <a href="#work">Work</a>
+      </li>
+
+      <li>
+        <h5 class="nav__subtitle">Work in Progress</h5>
+        <a href="http://dribbble.com/raleighfelton" target="blank">Dribbble</a>
+      </li>
+
+      <li>
+        <h5 class="nav__subtitle">My Thoughts</h5>
+        <a href="https://medium.com/@raleighfelton" target="blank">Writing</a>
+      </li>
+
+      <li>
+        <h5 class="nav__subtitle">Best Attempts at</h5>
+        <a href="https://vimeo.com/raleighfelton" target="blank">Video</a>
+      </li>
+
+      <li>
+        <h5 class="nav__subtitle">Find me up in the</h5>
+        <a href="http://twitter.com/raleighfelton" target="blank">Twitter</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="wrapper">
+
+    <div>
+        <h1>Raleigh</br>Felton</h1>
+        <div>Designer</div>
+    </div>
 
 
-
-                <div id="work"class="portfolio">
-                    <div class="project-thumb">
-                        <div class="project">
-                          <a href="views/crnt.html">
-                            <img border="0" alt="CRNT Surf App" src="images/crnt-thumb.jpg">
-                        </div>
-                        <div class="project">
-                          <a href="views/i-am-now.html">
-                            <img border="0" alt="I AM NOW" src="images/iamnow/iamnow-thumb.jpg">
-                        </div>
-                        <div class="project">
-                          <a href="views/substrate.html">
-                            <img border="0" alt="Throw" src="images/substrate/substrate-thumb.png">
-                        </div>
-                        <div class="project">
-                          <a href="views/throw.html">
-                            <img border="0" alt="Throw" src="images/throw/throw-thumb.jpg">
-                        </div>
-                    </div>
-                </div>
-                <footer class="footer">
-                    <a href="https://github.com/raleighfelton">GitHub</a>
-                </footer>
+    <div id="work"class="portfolio">
+        <div class="project-thumb">
+            <div class="project">
+              <a href="views/crnt.html">
+                <img border="0" alt="CRNT Surf App" src="images/crnt-thumb.jpg">
             </div>
+            <div class="project">
+              <a href="views/i-am-now.html">
+                <img border="0" alt="I AM NOW" src="images/iamnow/iamnow-thumb.jpg">
+            </div>
+            <div class="project">
+              <a href="views/substrate.html">
+                <img border="0" alt="Throw" src="images/substrate/substrate-thumb.png">
+            </div>
+            <div class="project">
+              <a href="views/throw.html">
+                <img border="0" alt="Throw" src="images/throw/throw-thumb.jpg">
+            </div>
+        </div>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    <a href="https://github.com/raleighfelton">GitHub</a>
+  </footer>
 
 
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-            <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
-            <script src="js/plugins.js"></script>
-            <script src="js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+  <script src="src/utils/nav.js"</script>
+  <!-- <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script> -->
 
-            <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-            <script>
-                (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-                    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-                e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-                e.src='https://www.google-analytics.com/analytics.js';
-                r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-                ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-            </script>
-            
-        </body>
-        </html>
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+          function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+  </script>
+
+</body>
+</html>

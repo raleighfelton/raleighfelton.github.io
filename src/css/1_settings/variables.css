@@ -1,12 +1,14 @@
 :root {
   --color-black: #141515;
   --color-blue: #31a4de;
-  --color-eltric-green: #00FF80;
+  --color-green: #00ff80;
+  --color-white: #fff;
   --color-darkgrey: ##343536;
   --color-grey-light: #ccc;
   --color-primary: #e025f8;
-  --font-family-bold: "futura-pt-bold","europa",sans-serif;
-  --font-family-regular: "europa",sans-serif;
+  --font-family-bold: "futura-pt-bold", "europa", sans-serif;
+  --font-family-regular: "europa", sans-serif;
+  --font-family-serif: "essonnes-display", serif;
   --font-size-sm: 12px;
   --font-size: 16px;
   --font-size-lg: 24px;
@@ -15,6 +17,7 @@
   --font-size-xxxl: 120px;
   --font-weight-bold: 600;
   --font-weight-normal: 400;
+  --font-weight-light: 300;
   --radius: 10px;
   --spacing-sm: var(--font-size-sm);
   --spacing: var(--font-size);

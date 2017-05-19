@@ -2,24 +2,22 @@ h1, h2, h3, h4, a, button {
   font-family: var(--font-family-bold);
 }
 
-h5, h6, p {
+h5 {
+  font-family: var(--font-family-serif);
+  font-style: italic;
+}
+
+h6, p {
   font-family: var(--font-family-regular);
 }
 
-h1 {  font-size: var(--font-size-xxxl); }
-h2 {  font-size: var(--font-size-xxl); }
-h3 {  font-size: var(--font-size-xl); }
-h4 {  font-size: 40px; }
-h5 {  font-size: var(--font-size-lg); }
-h6 {  font-size: var(--font-size); }
+h1 { font-size: var(--font-size-xxxl); }
+h2 { font-size: var(--font-size-xxl); }
+h3 { font-size: var(--font-size-xl); }
+h4 { font-size: 40px; }
+h5 { font-size: var(--font-size-lg); }
+h6 { font-size: var(--font-size); }
 
-/*mark {
-  background-color: var(--color-eltric-green,);
-}*/
-
-/*.highlight {
-  font-size:14px;
-  line-height: 28px;
-  margin: 5%;
-  position: absolute;
-}*/
+a {
+  text-decoration: none;
+}

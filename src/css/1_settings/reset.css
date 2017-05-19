@@ -51,10 +51,10 @@ table {
   box-sizing: border-box;
 }
 
-//background color
+/*background color*/
 
-body {
+/*body {
   background-color: $black;
   max-width: 1000px;
   margin: 0px auto;
-}
+}*/

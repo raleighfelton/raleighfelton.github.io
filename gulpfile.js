@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var postcss = require('gulp-postcss');
+var gutil = require('gulp-util');
 var atImport = require("postcss-import")
 var autoprefixer = require('autoprefixer');
 var cssnext = require('cssnext');
@@ -22,33 +23,10 @@ gulp.task('css',function(){
     autoprefixer
   ];
   return gulp.src('./src/css/*.css')
-    .pipe(postcss(processors))
+    .pipe(postcss(processors).on('error', gutil.log))
     .pipe(gulp.dest('./dest'));
 })
 
 gulp.task('watch',function(){
   gulp.watch(['./src/css/**/*.css'], ['css']);
 })
-
-
-/*OLD*/
-/*gulp.task('css', function () {
-  var processors = [
-    atImport,
-    cssnext,
-    precss,
-    //stylelint,
-    pxtorem,
-    autoprefixer
-  ];
-  return gulp.src('./src/css/*.css')
-    .pipe(postcss(processors))
-    .pipe(gulp.dest('./dest'));
-});
-
-
-gulp.task('copy', function () {
-    gulp.src('./index.html')
-    .pipe(gulp.dest('./dest/'));
-});
-*/
