@@ -110,12 +110,17 @@ nav {
 
     li {
       font-size: 40px;
-      padding: 16px 4px;
+      padding: 16px 0;
       text-align: center;
 
       @media screen and (min-width: 1025px) {
         font-size: 64px;
-        padding: 40px 5px;
+        padding: 32px 0;
+      }
+
+      @media screen and (min-width: 1681px) {
+        font-size: 64px;
+        padding: 40px 0;
       }
     }
   }
