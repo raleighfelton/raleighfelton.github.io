@@ -1,9 +1,12 @@
-h1, h2, h3, h4, a, button {
+h1, h2,h4, a, button {
   font-family: var(--font-family-bold);
 }
 
-h5 {
+h3, h5 {
   font-family: var(--font-family-serif);
+}
+
+h5 {
   font-style: italic;
 }
 
@@ -17,6 +20,10 @@ h3 { font-size: var(--font-size-xl); }
 h4 { font-size: 40px; }
 h5 { font-size: var(--font-size-lg); }
 h6 { font-size: var(--font-size); }
+
+p {
+  line-height: var(--spacing-lg);
+}
 
 a {
   text-decoration: none;

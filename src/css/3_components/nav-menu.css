@@ -10,7 +10,7 @@
     position: relative;
     transition: 0.1s transform linear;
     width: 24px;
-    z-index: 1;
+    z-index: 100;
   }
 
   &__subtitle {
@@ -133,6 +133,5 @@ nav {
 
   a:hover {
     border-bottom: 4px solid #00FF80;;
-    /*border-bottom-color: var(--color-green);*/
   }
 }

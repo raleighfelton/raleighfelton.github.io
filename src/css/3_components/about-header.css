@@ -1,0 +1,32 @@
+.c-about-header {
+  background: var(--color-green);
+  height: 668px;
+  width: auto;
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+  }
+
+  &__title {
+    color: var(--color-white);
+    float: left;
+
+    @media screen and (min-width: 1024px) {
+      width: 50%;
+      background-color: red;
+    }
+  }
+
+  &__image {
+    background-image: url("/images/about-raleighfelton@2x.png");
+    background-position: -100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+
+    @media screen and (min-width: 1024px) {
+      background-size: 720px;
+      width: 50%;
+    }
+  }
+}

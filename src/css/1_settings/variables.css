@@ -1,9 +1,9 @@
 :root {
   --color-black: #141515;
   --color-blue: #31a4de;
-  --color-green: #00ff80;
+  --color-green: #2afd7b;
   --color-white: #fff;
-  --color-darkgrey: ##343536;
+  --color-darkgrey: #282828;
   --color-grey-light: #ccc;
   --color-primary: #e025f8;
   --font-family-bold: "futura-pt-bold", "europa", sans-serif;
@@ -12,8 +12,8 @@
   --font-size-sm: 12px;
   --font-size: 16px;
   --font-size-lg: 24px;
-  --font-size-xl: 48px;
-  --font-size-xxl: 80px;
+  --font-size-xl: 32px;
+  --font-size-xxl: 64px;
   --font-size-xxxl: 120px;
   --font-weight-bold: 600;
   --font-weight-normal: 400;
@@ -22,5 +22,6 @@
   --spacing-sm: var(--font-size-sm);
   --spacing: var(--font-size);
   --spacing-lg: var(--font-size-lg);
-  --spacing-lg: var(--font-size-xl);
+  --spacing-xl: var(--font-size-xl);
+  --spacing-xxl: var(--font-size-xxl);
 }

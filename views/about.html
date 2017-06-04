@@ -13,25 +13,92 @@
 
         <script src="https://use.typekit.net/bje5ihb.js"></script>
         <script>try{Typekit.load({ async: true });}catch(e){}</script>
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
     </head>
     <body>
 
-      <div class="">
+      <button class="nav nav__btn" type="button">
+    	  <span class="bar"></span>
+      </button>
 
-        <div class="c-content">
-          <p class="c-content__p"><mark>I am a multidisciplinary designer, father, creator of CRNT Surf App & building React2.co. I am also actively learning to code in Javascript while refining my CSS. I enjoying doing all kinds of design work but I love projects that solve real problems. I believe in building experiences, designing things that are simple & enjoyable to use. My style is to iterate and refine through simplification throughout a project. I find through each iteration, a better solution emerges. I am interested in projects that will revolutionize an industry or product. I am also interested in projects that I can collaborate with passionate & egoless people.</mark></p>
+      <nav>
+        <ul>
+
+          <li>
+            <h5 class="nav__subtitle">Sumpin' Sumpin'</h5>
+            <a href="views/about.html">About</a>
+          </li>
+
+          <li>
+            <h5 class="nav__subtitle">Selected</h5>
+            <a class="work" href="#work">Work</a>
+          </li>
+
+          <li>
+            <h5 class="nav__subtitle">Work in Progress</h5>
+            <a href="http://dribbble.com/raleighfelton" target="blank">Dribbble</a>
+          </li>
+
+          <li>
+            <h5 class="nav__subtitle">My Thoughts</h5>
+            <a href="https://medium.com/@raleighfelton" target="blank">Writing</a>
+          </li>
+
+          <li>
+            <h5 class="nav__subtitle">Best Attempts at</h5>
+            <a href="https://vimeo.com/raleighfelton" target="blank">Video</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="c-wrapper">
+
+        <div class="c-about-header">
+          <div class="c-about-header__title">
+            <h2>Raleigh</h2>
+            <h2>Felton</h2>
+            <h5>Designer</h5>
+          </div>
+
+
+          <div class="c-about-header__image">
+            <!-- <img src="../images/about-raleighfelton.png"> -->
+          </div>
         </div>
 
-        <div class="c-background-image">
-        </div>
+          <div>
+            <h3>I am a multidisciplinary designer, creator of CRNT Surf App & building React2.co. I am also actively learning to code in Javascript while refining my CSS.</h3>
+            <p>I enjoying doing all kinds of design work but I love projects that solve real problems. I believe in building experiences, designing things that are simple & enjoyable to use. My style is to iterate and refine through simplification throughout a project. I find through each iteration, a better solution emerges. I am interested in projects that will revolutionize an industry or product. I am also interested in projects that I can collaborate with passionate & egoless people.</p>
+          </div>
+
+      </div>
+
+      <footer class="c-footer">
+        <div class="c-footer__container">
+
+          <div class="c-footer__logo"></div>
+
+          <h2 class="c-footer__title">Contact</h2>
+
+          <a class="c-footer__mail" href="mailto:raleighfelton@gmail.com?Subject=Hello" target="_top">raleighfelton at gmail.com</a>
+
+        <ul>
+          <a href="https://twitter.com/raleighfelton" target="_blank">Twitters</a>
+          <a href="https://dribbble.com/raleighfelton" target="_blank">Dibbble</a>
+          <a href="https://medium.com/raleighfelton" target="_blank">Medium</a>
+          <a href="https://instagram.com/raleighfelton" target="_blank">Instagram</a>
+          <a href="https://vimeo.com/raleighfelton" target="_blank">Vimeo</a>
+          <a href="https://github.com/raleighfelton" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/raleighfelton/" target="_blank">Linkedin</a>
+        </ul>
 
         </div>
+      </footer>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+      <script src="../src/utils/nav.js"</script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -42,5 +109,5 @@
           r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
           ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
-        
+
     </body>

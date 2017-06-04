@@ -3,3 +3,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.menu-open {
+  max-height: 100vh;
+  overflow-y: hidden;
+}

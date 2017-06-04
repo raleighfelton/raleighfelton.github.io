@@ -1,8 +1,12 @@
 .c-wrapper {
   align-items: center;
-  height: 100vh;
-  margin: 0 auto;
+  background: var(--color-white);
+  height: 100%;
   /* justify-content: center; */
-  max-width: 1028px;
-  background-color: blue;
+  margin-bottom: 100vh;
+
+  /*&__container {
+    margin: 0 auto;
+    max-width: 1440px;
+  }*/
 }

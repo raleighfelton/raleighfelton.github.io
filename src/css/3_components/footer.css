@@ -1,0 +1,49 @@
+.c-footer {
+  background: var(--color-darkgrey);
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  z-index: -1000;
+
+  &__container {
+    margin: 0 16px;
+    max-width: 306px;
+
+    @media screen and (min-width: 1024px) {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+  }
+
+  &__logo {
+    background-image: url("/images/raleigh-felton-logo.png");
+    background-repeat: no-repeat;
+    background-size: 80px;
+    height: 80px;
+    margin-top: 25%;
+  }
+
+  &__title {
+    color: var(--color-green);
+    margin-bottom: var(--spacing-xxl);
+    margin-top: var(--spacing-xxl);
+    text-transform: uppercase;
+  }
+
+  &__mail {
+    color: var(--color-white);
+    font-family: var(--font-family-serif);
+    font-size: var(--font-size-lg);
+  }
+
+  a {
+    color: var(--color-white);
+    font-size: var(--font-size-xxl);
+  }
+
+  a:hover {
+    color: var(--color-green);
+  }
+}

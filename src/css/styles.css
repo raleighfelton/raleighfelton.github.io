@@ -9,10 +9,10 @@
 
 /* 2_elements */
 @import "2_elements/typography";
-@import "2_elements/images";
 
 /* 3_components */
-@import "3_components/about-bkgd";
+@import "3_components/about-header";
+@import "3_components/footer";
 @import "3_components/nav-menu";
 @import "3_components/wrapper";
 /* 4_layout */
