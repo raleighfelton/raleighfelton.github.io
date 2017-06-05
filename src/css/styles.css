@@ -15,6 +15,7 @@
 @import "3_components/footer";
 @import "3_components/nav-menu";
 @import "3_components/wrapper";
+@import "3_components/about-content";
 /* 4_layout */
 @import "4_layout/content";
 /* 5_helpers */

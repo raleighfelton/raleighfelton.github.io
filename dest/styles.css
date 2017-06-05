@@ -374,11 +374,15 @@ h6, p {
 }
 h1 { font-size: 7.5rem; }
 h2 { font-size: 4rem; }
-h3 { font-size: 2rem; }
+h3 {
+  font-size: 2rem;
+  line-height: 2rem;
+}
 h4 { font-size: 2.5rem; }
 h5 { font-size: 1.5rem; }
 h6 { font-size: 1rem; }
 p {
+  font-size: 1rem;
   line-height: 1.5rem;
 }
 a {
@@ -388,7 +392,11 @@ a {
 .c-about-header {
   background: #2afd7b;
   height: 668px;
-  width: auto
+  width: auto;
+}
+.c-about-header h1 {
+  font-size: 4rem;
+  margin-top: -16px
 }
 @media screen and (min-width: 1024px) {
   .c-about-header {
@@ -400,26 +408,48 @@ a {
 .c-about-header__title {
   color: #fff;
   float: left;
+  margin-left: 10%;
+  margin-top: 384px;
 }
 @media screen and (min-width: 1024px) {
   .c-about-header__title {
+    margin-top: 0px;
     width: 50%;
-    background-color: red;
   }
 }
 .c-about-header__image {
   background-image: url("/images/about-raleighfelton@2x.png");
-  background-position: -100px;
+  background-position: -270px;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
 }
 @media screen and (min-width: 1024px) {
   .c-about-header__image {
+    background-position: 0;
     background-size: 720px;
     width: 50%;
   }
 }
+.c-about-header__type {
+  text-transform: uppercase;
+}
+@media screen and (min-width: 1024px) {
+  .c-about-header__type {
+    margin: 226px 5%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .c-about-header__type {
+    margin: 226px 20%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .c-about-header h1 {
+    font-size: 7.5rem;
+    margin-top: -32px;
+  }
+    }
 .c-footer {
   background: #282828;
   bottom: 0;
@@ -431,10 +461,14 @@ a {
 }
 .c-footer a {
   color: #fff;
-  font-size: 4rem;
+  display: block;
+  font-size: 2rem
 }
 .c-footer a:hover {
   color: #2afd7b;
+}
+.c-footer ul {
+  margin-top: 32px
 }
 .c-footer__container {
   margin: 0 16px;
@@ -449,38 +483,64 @@ a {
 .c-footer__logo {
   background-image: url("/images/raleigh-felton-logo.png");
   background-repeat: no-repeat;
-  background-size: 80px;
+  background-size: 56px;
   height: 80px;
-  margin-top: 25%;
+  margin-top: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .c-footer__logo {
+    background-size: 80px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
 }
 .c-footer__title {
   color: #2afd7b;
-  margin-bottom: 64px;
-  margin-top: 64px;
+  margin-bottom: 32px;
+  margin-top: 32px;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1024px) {
+  .c-footer__title {
+    margin-bottom: 64px;
+    margin-top: 64px;
+  }
 }
 .c-footer__mail {
   color: #fff;
   font-family: "essonnes-display", serif;
   font-size: 1.5rem;
+  font-style: italic;
 }
+@media screen and (min-width: 1024px) {
+  .c-footer a {
+    font-size: 4rem;
+  }
+    }
+@media screen and (min-width: 1024px) {
+  .c-footer ul {
+    margin-top: 100px;
+    width: 360px;
+  }
+    }
 .nav {
+  z-index: 4
 }
 .nav__btn {
   background-color: transparent;
-  border: 0;
-  float: right;
+  border: 0;/*float: right;*/
   height: 40px;
   margin: 40px;
   outline: 0;
-  padding: 0;
-  position: relative;
+  padding: 0;/*position: relative;*/
+  position: absolute;
+  top: 0;
+  right: 0;
   -webkit-transition: 0.1s -webkit-transform linear;
   transition: 0.1s -webkit-transform linear;
   transition: 0.1s transform linear;
   transition: 0.1s transform linear, 0.1s -webkit-transform linear;
   width: 24px;
-  z-index: 100;
 }
 .nav__subtitle {
   color: #717073;
@@ -519,7 +579,7 @@ a {
   transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s, 0.2s -webkit-transform linear 0.2s;
 }
 .bar, .bar::before, .bar::after {
-  background: #141515;
+  background: #454348;
   content: " ";
   height: 4px;
   right: 0;
@@ -613,6 +673,46 @@ nav a:hover {
     max-width: 1440px;
   }*/
 }
+.c-about-content {
+  color: #454348;
+  margin: 64px 8%;
+  max-width: 464px;
+}
+.c-about-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 32px;
+}
+.c-about-content h3 a {
+  background-color: #454348;
+  color: #2afd7b;
+  font-family: "essonnes-display", serif;
+}
+.c-about-content h3 a:hover {
+  background-color: #2afd7b;
+  color: #454348;
+}
+.c-about-content p {
+  font-size: 1rem;
+  line-height: calc(1rem * 1.75)
+}
+@media screen and (min-width: 1024px) {
+  .c-about-content {
+    margin: 64px auto;
+    max-width: 672px;
+  }
+  }
+@media screen and (min-width: 1024px) {
+  .c-about-content h3 {
+    font-size: 2rem;
+    line-height: calc(1rem * 2.5);
+  }
+    }
+@media screen and (min-width: 1024px) {
+  .c-about-content p {
+    font-size: calc(1rem * 1.25);
+    line-height: calc(1rem * 2.25);
+  }
+    }
 /* 4_layout */
 .c-content {
   display: -webkit-box;

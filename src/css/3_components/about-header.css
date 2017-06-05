@@ -10,23 +10,48 @@
   &__title {
     color: var(--color-white);
     float: left;
+    margin-left: 10%;
+    margin-top: 384px;
 
     @media screen and (min-width: 1024px) {
+      margin-top: 0px;
       width: 50%;
-      background-color: red;
     }
   }
 
   &__image {
     background-image: url("/images/about-raleighfelton@2x.png");
-    background-position: -100px;
+    background-position: -270px;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
 
     @media screen and (min-width: 1024px) {
+      background-position: 0;
       background-size: 720px;
       width: 50%;
+    }
+  }
+
+  &__type {
+    text-transform: uppercase;
+
+    @media screen and (min-width: 1024px) {
+      margin: 226px 5%;
+    }
+
+    @media screen and (min-width: 1440px) {
+      margin: 226px 20%;
+    }
+  }
+
+  h1 {
+    font-size: var(--font-size-xxl);
+    margin-top: -16px;
+
+    @media screen and (min-width: 1024px) {
+      font-size: var(--font-size-xxxl);
+      margin-top: -32px;
     }
   }
 }
