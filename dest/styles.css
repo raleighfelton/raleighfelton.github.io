@@ -336,7 +336,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
 	line-height: 1;
 }
-ol, ul {
+ul {
 	list-style: none;
 }
 blockquote, q {
@@ -359,6 +359,21 @@ table {
   max-width: 1000px;
   margin: 0px auto;
 }*/
+/*
+  Responsive Type
+
+  The responsive typography mixin can be used on any selector, and will scale
+  fluidly between the min and max font sizes specified in the mixin as the
+  window resizes between the min and max breakpoints (optional parameters).
+
+  ```css
+  h1 {
+    @mixin rt 14, 18;
+  }
+  ```
+
+  Styleguide: Settings.Responsive Type
+*/
 /* 2_elements */
 h1, h2, h4, a, button {
   font-family: "futura-pt-bold", "europa", sans-serif;
@@ -366,27 +381,84 @@ h1, h2, h4, a, button {
 h3, h5 {
   font-family: "essonnes-display", serif;
 }
-h5 {
-  font-style: italic;
+/*Font Sizes and Styles*/
+h1 {
+  /*font-size: var(--font-size-xxxl);*/
+  font-size: 64PX;
 }
-h6, p {
-  font-family: "europa", sans-serif;
+@media (min-width: 300 1024px) and (max-width: 1024px) {
+  h1 {
+    font-size: calc(64PX + (120 - 64) * ((100vw - 300 1024PX) / (1024 - 300 1024)));/* stylelint-disable-line function-whitespace-after */
+  }
 }
-h1 { font-size: 7.5rem; }
-h2 { font-size: 4rem; }
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 120PX;
+  }
+}
+h2 {
+  /*font-size: var(--font-size-xxl);*/
+  font-size: 32PX;
+}
+@media (min-width: 300 1000px) and (max-width: 1024px) {
+  h2 {
+    font-size: calc(32PX + (64 - 32) * ((100vw - 300 1000PX) / (1024 - 300 1000)));/* stylelint-disable-line function-whitespace-after */
+  }
+}
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 64PX;
+  }
+}
 h3 {
   font-size: 2rem;
   line-height: 2rem;
 }
-h4 { font-size: 2.5rem; }
-h5 { font-size: 1.5rem; }
-h6 { font-size: 1rem; }
+h5 {
+  /*font-size: var(--font-size-lg);*/
+  font-size: 24PX;
+  font-style: italic;
+}
+@media (min-width: 300 1000px) and (max-width: 1024px) {
+  h5 {
+    font-size: calc(24PX + (32 - 24) * ((100vw - 300 1000PX) / (1024 - 300 1000)));/* stylelint-disable-line function-whitespace-after */
+  }
+}
+@media (min-width: 1024px) {
+  h5 {
+    font-size: 32PX;
+  }
+}
+h6, p {
+  font-family: "europa", sans-serif;
+}
+h4 {
+  font-size: 2.5rem;
+}
+h6 {
+  font-size: 1rem;
+}
 p {
   font-size: 1rem;
   line-height: 1.5rem;
 }
 a {
   text-decoration: none;
+}
+ol {
+  font-family: "essonnes-text", serif;
+
+  font-size: 12PX;
+}
+@media (min-width: 300 1000px) and (max-width: 1024px) {
+  ol {
+    font-size: calc(12PX + (16 - 12) * ((100vw - 300 1000PX) / (1024 - 300 1000)));/* stylelint-disable-line function-whitespace-after */
+  }
+}
+@media (min-width: 1024px) {
+  ol {
+    font-size: 16PX;
+  }
 }
 /* 3_components */
 .c-about-header {
@@ -395,8 +467,11 @@ a {
   width: auto;
 }
 .c-about-header h1 {
-  font-size: 4rem;
   margin-top: -16px
+}
+.c-about-header h5 {
+  margin-left: 8px;
+  margin-top: -8px
 }
 @media screen and (min-width: 1024px) {
   .c-about-header {
@@ -413,8 +488,14 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .c-about-header__title {
-    margin-top: 0px;
+    margin-left: auto;
+    margin-top: 0;
     width: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .c-about-header__title {
+    margin-left: 10%;
   }
 }
 .c-about-header__image {
@@ -423,6 +504,11 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
+}
+@media screen and (min-width: 768px) {
+  .c-about-header__image {
+    background-position: 150px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .c-about-header__image {
@@ -446,8 +532,13 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .c-about-header h1 {
-    font-size: 7.5rem;
     margin-top: -32px;
+  }
+    }
+@media screen and (min-width: 1024px) {
+  .c-about-header h5 {
+    margin-top: -16px;
+    margin-left: 8px;
   }
     }
 .c-footer {
@@ -468,59 +559,78 @@ a {
   color: #2afd7b;
 }
 .c-footer ul {
-  margin-top: 32px
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2/*margin-top: 32px;*/
 }
 .c-footer__container {
-  margin: 0 16px;
-  max-width: 306px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 24px auto;
+  max-width: 272px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .c-footer__container {
-    max-width: 1000px;
-    margin: 0 auto;
+    max-width: 600px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .c-footer__container {
+    max-width: 1000px;/*margin: 24 auto;*/
   }
 }
 .c-footer__logo {
   background-image: url("/images/raleigh-felton-logo.png");
   background-repeat: no-repeat;
-  background-size: 56px;
-  height: 80px;
-  margin-top: 32px;
+  background-size: 56px 56px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;/*height: 80px;*//*margin-top: 32px;*/
 }
 @media screen and (min-width: 1024px) {
   .c-footer__logo {
     background-size: 80px;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;/*margin-bottom: 10%;*//*margin-top: 10%;*/
   }
 }
 .c-footer__title {
-  color: #2afd7b;
-  margin-bottom: 32px;
-  margin-top: 32px;
+  color: #2afd7b;/*margin-bottom: var(--spacing-xl);*//*margin-top: var(--spacing-xl);*/
   text-transform: uppercase;
 }
 @media screen and (min-width: 1024px) {
-  .c-footer__title {
-    margin-bottom: 64px;
-    margin-top: 64px;
+  .c-footer__title {/*margin-bottom: var(--spacing-xxl);*//*margin-top: var(--spacing-xxl);*/
   }
 }
 .c-footer__mail {
   color: #fff;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   font-family: "essonnes-display", serif;
   font-size: 1.5rem;
   font-style: italic;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
   .c-footer a {
     font-size: 4rem;
   }
     }
 @media screen and (min-width: 1024px) {
   .c-footer ul {
-    margin-top: 100px;
-    width: 360px;
+    -webkit-box-flex: 3;
+        -ms-flex-positive: 3;
+            flex-grow: 3;/*width: 360px;*/
   }
     }
 .nav {
@@ -528,14 +638,14 @@ a {
 }
 .nav__btn {
   background-color: transparent;
-  border: 0;/*float: right;*/
+  border: 0;
   height: 40px;
   margin: 40px;
   outline: 0;
-  padding: 0;/*position: relative;*/
+  padding: 0;
   position: absolute;
-  top: 0;
   right: 0;
+  top: 0;
   -webkit-transition: 0.1s -webkit-transform linear;
   transition: 0.1s -webkit-transform linear;
   transition: 0.1s transform linear;
@@ -613,6 +723,7 @@ nav {
   opacity: 0.99;
   padding-top: 64px;
   position: fixed;
+  overflow-y: scroll;
   -webkit-transform: translateY(-100vh);
           transform: translateY(-100vh);
   -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
@@ -695,6 +806,25 @@ nav a:hover {
   font-size: 1rem;
   line-height: calc(1rem * 1.75)
 }
+.c-about-content h4 {
+  margin-bottom: 32px;
+  margin-top: 64px;
+}
+.c-about-content ol {
+  line-height: 1.5rem;
+}
+.c-about-content ol a {
+  background-color: #454348;
+  color: #2afd7b;
+  font-family: "essonnes-text", serif;
+}
+.c-about-content ol a:hover {
+  background-color: #2afd7b;
+  color: #454348;
+}
+.c-about-content ol li {
+  margin-top: 16px;
+}
 @media screen and (min-width: 1024px) {
   .c-about-content {
     margin: 64px auto;
@@ -704,7 +834,7 @@ nav a:hover {
 @media screen and (min-width: 1024px) {
   .c-about-content h3 {
     font-size: 2rem;
-    line-height: calc(1rem * 2.5);
+    line-height: calc(1rem * 3);
   }
     }
 @media screen and (min-width: 1024px) {

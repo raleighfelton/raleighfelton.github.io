@@ -14,8 +14,13 @@
     margin-top: 384px;
 
     @media screen and (min-width: 1024px) {
-      margin-top: 0px;
+      margin-left: auto;
+      margin-top: 0;
       width: 50%;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 10%;
     }
   }
 
@@ -25,6 +30,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
+
+    @media screen and (min-width: 768px) {
+      background-position: 150px;
+    }
 
     @media screen and (min-width: 1024px) {
       background-position: 0;
@@ -46,12 +55,20 @@
   }
 
   h1 {
-    font-size: var(--font-size-xxl);
     margin-top: -16px;
 
     @media screen and (min-width: 1024px) {
-      font-size: var(--font-size-xxxl);
       margin-top: -32px;
+    }
+  }
+
+  h5 {
+    margin-left: 8px;
+    margin-top: -8px;
+
+    @media screen and (min-width: 1024px) {
+      margin-top: -16px;
+      margin-left: 8px;
     }
   }
 }

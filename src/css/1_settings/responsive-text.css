@@ -1,0 +1,27 @@
+/*
+  Responsive Type
+
+  The responsive typography mixin can be used on any selector, and will scale
+  fluidly between the min and max font sizes specified in the mixin as the
+  window resizes between the min and max breakpoints (optional parameters).
+
+  ```css
+  h1 {
+    @mixin rt 14, 18;
+  }
+  ```
+
+  Styleguide: Settings.Responsive Type
+*/
+
+@define-mixin rt $min, $max, $screen-width-min: 300, $screen-width-max: 1024 {
+  font-size: $(min)PX;
+
+  @media (min-width: $(screen-width-min)px) and (max-width: $(screen-width-max)px) {
+    font-size: calc($(min)PX + ($max - $min) * ((100vw - $(screen-width-min)PX) / ($screen-width-max - $screen-width-min))); /* stylelint-disable-line function-whitespace-after */
+  }
+
+  @media (min-width: $(screen-width-max)px) {
+    font-size: $(max)PX;
+  }
+}

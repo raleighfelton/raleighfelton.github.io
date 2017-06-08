@@ -1,4 +1,4 @@
-h1, h2,h4, a, button {
+h1, h2, h4, a, button {
   font-family: var(--font-family-bold);
 }
 
@@ -6,7 +6,26 @@ h3, h5 {
   font-family: var(--font-family-serif);
 }
 
+/*Font Sizes and Styles*/
+
+h1 {
+  /*font-size: var(--font-size-xxxl);*/
+  @mixin rt 64, 120, 300 1024;
+}
+
+h2 {
+  /*font-size: var(--font-size-xxl);*/
+  @mixin rt 32, 64, 300 1000;
+}
+
+h3 {
+  font-size: var(--font-size-xl);
+  line-height: var(--spacing-xl);
+}
+
 h5 {
+  /*font-size: var(--font-size-lg);*/
+  @mixin rt 24, 32, 300 1000;
   font-style: italic;
 }
 
@@ -14,17 +33,13 @@ h6, p {
   font-family: var(--font-family-regular);
 }
 
-h1 { font-size: var(--font-size-xxxl); }
-h2 { font-size: var(--font-size-xxl); }
-
-h3 {
-  font-size: var(--font-size-xl);
-  line-height: var(--spacing-xl);
+h4 {
+  font-size: 40px;
 }
 
-h4 { font-size: 40px; }
-h5 { font-size: var(--font-size-lg); }
-h6 { font-size: var(--font-size); }
+h6 {
+  font-size: var(--font-size);
+}
 
 p {
   font-size: var(--font-size);
@@ -33,4 +48,10 @@ p {
 
 a {
   text-decoration: none;
+}
+
+ol {
+  font-family: var(--font-family-serif-text);
+
+  @mixin rt 12, 16, 300 1000;
 }

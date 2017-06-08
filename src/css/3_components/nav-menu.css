@@ -4,15 +4,13 @@
   &__btn {
     background-color: transparent;
     border: 0;
-    /*float: right;*/
     height: 40px;
     margin: 40px;
     outline: 0;
     padding: 0;
-    /*position: relative;*/
     position: absolute;
-    top: 0;
     right: 0;
+    top: 0;
     transition: 0.1s transform linear;
     width: 24px;
   }
@@ -95,6 +93,7 @@ nav {
   opacity: 0.99;
   padding-top: 64px;
   position: fixed;
+  overflow-y: scroll;
   transform: translateY(-100vh);
   transition: transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
   width: 100vw;

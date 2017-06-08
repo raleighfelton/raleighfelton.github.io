@@ -14,7 +14,7 @@
 
     @media screen and (min-width: 1024px) {
       font-size: var(--font-size-xl);
-      line-height: calc(var(--spacing) * 2.5);
+      line-height: calc(var(--spacing) * 3);
     }
 
     a {
@@ -36,6 +36,30 @@
     @media screen and (min-width: 1024px) {
       font-size: calc(var(--font-size) * 1.25);
       line-height: calc(var(--spacing) * 2.25);
+    }
+  }
+
+  h4 {
+    margin-bottom: 32px;
+    margin-top: 64px;
+  }
+
+  ol {
+    line-height: 24px;
+
+    a {
+      background-color: var(--color-black);
+      color: var(--color-green);
+      font-family: var(--font-family-serif-text);
+    }
+
+    a:hover {
+      background-color: var(--color-green);
+      color: var(--color-black);
+    }
+
+    li {
+      margin-top: 16px;
     }
   }
 }
