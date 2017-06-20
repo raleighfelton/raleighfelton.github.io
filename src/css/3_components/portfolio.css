@@ -1,0 +1,18 @@
+.c-portfolio {
+  max-width: 1400px;
+  height: auto;
+  margin-top: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+
+  &__project img {
+    height: auto;
+    margin: 20px 0;
+    width: 100%;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
