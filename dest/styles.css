@@ -679,21 +679,24 @@ ol {
   width: auto;
 }
 .c-home-header h1 {
-  text-transform: uppercase;
-  background-clip: text;
-  background-image: url(https://s-media-cache-ak0.pinimg.com/originals/03/2a/63/032a632818c4dd7d2237a86aeb2c073f.jpg);
+  -webkit-background-clip: text;
+  background-clip: text;/*background-image: url(https://s-media-cache-ak0.pinimg.com/originals/03/2a/63/032a632818c4dd7d2237a86aeb2c073f.jpg);*/
+  background-image: url("/images/title-bkgd-m.jpg");
+  background-size: 300px;
   color: transparent;
-  -webkit-background-clip: text
+  text-transform: uppercase
 }
 .c-home-header h3 {
-  color: #f06bbc;
+  color: #22c5df;
 }
-.c-home-header__title {/*background: red;*/
+.c-home-header__title {
   margin: 35vh auto;
   text-align: center;
 }
 @media screen and (min-width: 1024px) {
   .c-home-header h1 {
+    background-image: url("/images/title-bkgd.jpg");
+    background-size: 500px;
     font-size: 15.5rem;
     margin-top: -40px;
   }
@@ -857,11 +860,11 @@ nav a:hover {
     }*/
 }
 .c-portfolio {
-  max-width: 1400px;
   height: auto;
-  margin-top: 200px;
-  margin-right: auto;
   margin-left: auto;
+  margin-right: auto;
+  margin-top: 64px;
+  max-width: 1400px;
   text-align: center
 }
 .c-portfolio__project img {
