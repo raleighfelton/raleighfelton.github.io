@@ -374,6 +374,22 @@ table {
 
   Styleguide: Settings.Responsive Type
 */
+/**Responsive Vimeo*/
+.embed-container {
+  height: 0;
+  margin: 10px 0;
+  max-width: 100%;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+.embed-container iframe, .embed-container object, .embed-container embed {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
 /* 2_elements */
 h1, h2, h4, a, button {
   font-family: "futura-pt-bold", "europa", sans-serif;
@@ -690,7 +706,7 @@ ol {
   color: #22c5df;
 }
 .c-home-header__title {
-  margin: 35vh auto;
+  margin: 30vh auto;
   text-align: center;
 }
 @media screen and (min-width: 1024px) {
@@ -838,6 +854,28 @@ nav a:hover {
     padding: 40px 0;
   }
       }
+.c-portfolio {
+  height: auto;
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 64px;
+  max-width: 1400px;
+  text-align: center
+}
+.c-portfolio__project img {
+  height: auto;
+  margin: 20px 0;
+  width: 100%;
+}
+.c-portfolio__project img:hover {
+  opacity: 0.9;
+}
+.c-project-header {
+  background: #2afd7b;
+  height: 668px;
+  width: auto;
+}
 .c-wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -858,22 +896,6 @@ nav a:hover {
   margin: 0px 10%;/*@media screen and (min-width: 1440px) {
       max-width: 1440px;
     }*/
-}
-.c-portfolio {
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 64px;
-  max-width: 1400px;
-  text-align: center
-}
-.c-portfolio__project img {
-  height: auto;
-  margin: 20px 0;
-  width: 100%;
-}
-.c-portfolio__project img:hover {
-  opacity: 0.9;
 }
 .c-about-content {
   color: #454348;

@@ -6,6 +6,7 @@
 @import "1_settings/base";
 @import "1_settings/reset";
 @import "1_settings/responsive-text";
+@import "1_settings/responsive-vimeo";
 @import "1_settings/variables";
 
 /* 2_elements */
@@ -16,8 +17,9 @@
 @import "3_components/footer";
 @import "3_components/home-header";
 @import "3_components/nav-menu";
-@import "3_components/wrapper";
 @import "3_components/portfolio";
+@import "3_components/project-header";
+@import "3_components/wrapper";
 @import "3_components/about-content";
 /* 4_layout */
 @import "4_layout/content";
