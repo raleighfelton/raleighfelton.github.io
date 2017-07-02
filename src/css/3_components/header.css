@@ -1,4 +1,4 @@
-.c-about-header {
+.c-header {
   background: var(--color-green);
   height: 668px;
   width: auto;
@@ -21,6 +21,19 @@
 
     @media screen and (min-width: 1200px) {
       margin-left: 10%;
+    }
+
+    &--project {
+      margin: 0 10%;
+      padding-top: 214px;
+
+      h1 {
+        line-height: 46px;
+
+        @media screen and (min-width: 1024px) {
+          line-height: 84px;
+        }
+      }
     }
   }
 
@@ -52,6 +65,32 @@
     @media screen and (min-width: 1440px) {
       margin: 226px 20%;
     }
+
+    &--throw {
+      color: #37bbc7;
+    }
+
+    &--crnt {
+      color: #107a94;
+    }
+
+    h5 {
+      margin-left: 4px;
+      margin-top: -8px;
+
+      @media screen and (min-width: 1024px) {
+        margin-top: -16px;
+      }
+    }
+  }
+
+  &__project {
+    /*height: 428px;*/
+    height: 72vh;
+
+    @media screen and (min-width: 1024px) {
+      /*height: 668px;*/
+    }
   }
 
   h1 {
@@ -59,16 +98,6 @@
 
     @media screen and (min-width: 1024px) {
       margin-top: -32px;
-    }
-  }
-
-  h5 {
-    margin-left: 8px;
-    margin-top: -8px;
-
-    @media screen and (min-width: 1024px) {
-      margin-top: -16px;
-      margin-left: 8px;
     }
   }
 }

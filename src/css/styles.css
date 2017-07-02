@@ -13,12 +13,11 @@
 @import "2_elements/typography";
 
 /* 3_components */
-@import "3_components/about-header";
 @import "3_components/footer";
+@import "3_components/header";
 @import "3_components/home-header";
 @import "3_components/nav-menu";
 @import "3_components/portfolio";
-@import "3_components/project-header";
 @import "3_components/wrapper";
 @import "3_components/about-content";
 /* 4_layout */

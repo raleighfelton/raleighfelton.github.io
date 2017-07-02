@@ -11,7 +11,9 @@
     height: auto;
     margin: 20px 0;
     width: 100%;
+  }
 
+  &__link img {
     &:hover {
       opacity: 0.9;
     }
