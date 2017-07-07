@@ -1,0 +1,32 @@
+.c-home-header {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: auto;
+
+  &__title {
+    margin: 30vh auto;
+    text-align: center;
+  }
+
+  h1 {
+    -webkit-background-clip: text;
+    background-clip: text;
+    /*background-image: url(https://s-media-cache-ak0.pinimg.com/originals/03/2a/63/032a632818c4dd7d2237a86aeb2c073f.jpg);*/
+    background-image: url("/images/title-bkgd-m.jpg");
+    background-size: 300px;
+    color: transparent;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 1024px) {
+      background-image: url("/images/title-bkgd.jpg");
+      background-size: 500px;
+      font-size: 248px;
+      margin-top: -40px;
+    }
+  }
+
+  h3 {
+    color: var(--color-blue);
+  }
+}

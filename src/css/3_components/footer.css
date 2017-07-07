@@ -1,0 +1,121 @@
+.c-footer {
+  background: var(--color-darkgrey);
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  z-index: -1000;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    /*flex-direction: column;*/
+    height: 100vh;
+    /*justify-content: flex-start;*/
+    margin: 24px auto;
+    max-width: 85%;
+
+    @media screen and (min-width: 768px){
+      max-width: 600px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      max-width: 1000px;
+      /*margin: 24 auto;*/
+    }
+  }
+
+  &__content {
+    flex-direction: column;
+    height: 500px;
+    width: 100%;
+
+    @media screen and (min-width: 1024px){
+      height: 616px;
+    }
+  }
+
+  &__logo {
+    fill: var(--color-white);
+    height: 56px;
+    /*flex-grow: 1;*/
+        margin-bottom: 32px;
+    width: 56px;
+
+    @media screen and (min-width: 1024px) {
+      background-size: 80px;
+      margin-bottom: 64px;
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &__title {
+    color: var(--color-green);
+    /*margin-bottom: var(--spacing-xl);*/
+    /*margin-top: var(--spacing-xl);*/
+    text-transform: uppercase;
+
+    @media screen and (min-width: 1024px) {
+      margin-bottom: var(--spacing-xl);
+    }
+  }
+
+  &__mail {
+    color: var(--color-white);
+    flex-grow: 1;
+    font-family: var(--font-family-serif);
+    font-size: var(--font-size-lg);
+    font-style: italic;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 64px;
+    }
+  }
+
+  &__elsewhere {
+    /*background: red;*/
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__madein {
+    align-self: flex-end;
+    background: url("/images/made-in-logo.svg");
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+
+    @media screen and (min-width: 1024px) {
+      height: 144px;
+      width: 144px;
+    }
+  }
+
+  a {
+    color: var(--color-white);
+    display: block;
+    font-size: var(--font-size-xl);
+
+    /*@media screen and (min-width: 1200px) {
+      font-size: var(--font-size-xxl);
+    }*/
+  }
+
+  a:hover {
+    color: var(--color-green);
+  }
+
+  ul {
+    flex-grow: 2;
+    text-transform: uppercase;
+    /*margin-top: 32px;*/
+
+    @media screen and (min-width: 1024px) {
+      flex-grow: 3;
+      /*width: 360px;*/
+    }
+  }
+}

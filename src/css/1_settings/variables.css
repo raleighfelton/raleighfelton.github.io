@@ -1,0 +1,28 @@
+:root {
+  --color-black: #454348;
+  --color-blue: #22c5df;
+  --color-green: #2afd7b;
+  --color-white: #fff;
+  --color-darkgrey: #282828;
+  --color-grey-light: #ccc;
+  --color-primary: #e025f8;
+  --font-family-bold: "futura-pt-bold", "europa", sans-serif;
+  --font-family-regular: "europa", sans-serif;
+  --font-family-serif: "essonnes-display", serif;
+  --font-family-serif-text: "essonnes-text", serif;
+  --font-size-sm: 12px;
+  --font-size: 16px;
+  --font-size-lg: 24px;
+  --font-size-xl: 32px;
+  --font-size-xxl: 64px;
+  --font-size-xxxl: 120px;
+  --font-weight-bold: 600;
+  --font-weight-normal: 400;
+  --font-weight-light: 300;
+  --radius: 10px;
+  --spacing-sm: var(--font-size-sm);
+  --spacing: var(--font-size);
+  --spacing-lg: var(--font-size-lg);
+  --spacing-xl: var(--font-size-xl);
+  --spacing-xxl: var(--font-size-xxl);
+}

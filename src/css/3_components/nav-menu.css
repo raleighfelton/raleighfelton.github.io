@@ -1,0 +1,140 @@
+.nav {
+  z-index: 4;
+
+  &__btn {
+    background-color: transparent;
+    border: 0;
+    height: 40px;
+    margin: 40px;
+    outline: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.1s transform linear;
+    width: 24px;
+  }
+
+  &__subtitle {
+    color: #717073;
+    padding-bottom: 8px;
+    font-size: var(--font-size);
+    font-weight: var(--font-weight-light:);
+
+    @media screen and (min-width: 768px) {
+      font-size: var(--font-size-lg);
+    }
+  }
+}
+
+.bar {
+  &, &::before, &::after {
+    background: var(--color-black);
+    content: " ";
+    height: 4px;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s transform linear;
+    width: 100%;
+  }
+
+  & {
+    margin-top: -0.2rem;
+  }
+
+  &::before {
+    top: -10px;
+    width: 80%;
+  }
+
+  &::after {
+    top: 10px;
+    width: 70%;
+  }
+
+  &::before,
+  &::after {
+    transform: rotate(0deg);
+  }
+
+  .active & {
+    background: 0;
+
+    &::before {
+      background: var(--color-green);
+      transform: rotate(45deg);
+      width: 100%;
+    }
+
+    &::after {
+      background: var(--color-green);
+      transform: rotate(-45deg);
+      width: 100%;
+    }
+
+    &::before,
+    &::after {
+      top: 0;
+    }
+
+    &,
+    &::before,
+    &::after {
+      transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s;
+    }
+  }
+}
+
+nav {
+  background: #282828;
+  height: 100vh;
+  opacity: 0.99;
+  padding-top: 64px;
+  position: fixed;
+  overflow-y: scroll;
+  transform: translateY(-100vh);
+  transition: transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
+  width: 100vw;
+
+  .menu-open & {
+    transform: translateY(0);
+    width: 100vw;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    opacity: 1;
+    padding: 0;
+    /*transition: opacity 1.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
+    transition-delay: 0.6s;*/
+
+    li {
+      font-size: 40px;
+      padding: 16px 0;
+      text-align: center;
+
+      @media screen and (min-width: 1025px) {
+        font-size: 64px;
+        padding: 32px 0;
+      }
+
+      @media screen and (min-width: 1681px) {
+        font-size: 64px;
+        padding: 40px 0;
+      }
+    }
+  }
+
+  a {
+    border-bottom: 0 solid white;
+    color: var(--color-white);
+    text-transform: uppercase;
+  }
+
+  a:hover {
+    border-bottom: 4px solid #00FF80;;
+  }
+}
