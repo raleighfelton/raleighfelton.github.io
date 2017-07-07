@@ -929,7 +929,7 @@ nav a:hover {
 }
 .c-stat {
   margin: 64px auto;
-  max-width: 672px;
+  width: 672px;
 }
 .c-stat p {
   color: #454348;
