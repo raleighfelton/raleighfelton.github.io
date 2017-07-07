@@ -895,12 +895,12 @@ nav a:hover {
   margin: 20px 0;
   width: 100%;
 }
-.c-portfolio__hide {
-  opacity: 0;
-}
 .c-portfolio__link img {}
 .c-portfolio__link img:hover {
   opacity: 0.9;
+}
+.hide {
+  opacity: 0;
 }
 .c-wrapper {
   -webkit-box-align: center;
@@ -926,6 +926,13 @@ nav a:hover {
   .c-wrapper__container {
     margin: 0 auto;
   }
+}
+.c-stat {
+  margin: 64px auto;
+  max-width: 672px;
+}
+.c-stat p {
+  color: #454348;
 }
 .c-about-content {
   color: #454348;

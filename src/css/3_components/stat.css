@@ -1,0 +1,8 @@
+.c-stat {
+  margin: var(--spacing-xxl) auto;
+  max-width: 672px;
+
+  p {
+    color: var(--color-black);
+  }
+}

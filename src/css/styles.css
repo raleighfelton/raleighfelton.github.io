@@ -19,6 +19,7 @@
 @import "3_components/nav-menu";
 @import "3_components/portfolio";
 @import "3_components/wrapper";
+@import "3_components/stat";
 @import "3_components/about-content";
 /* 4_layout */
 @import "4_layout/content";
