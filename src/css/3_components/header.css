@@ -74,6 +74,10 @@
       color: #107a94;
     }
 
+    &--substrate {
+      color: #0054f3;
+    }
+
     h5 {
       margin-left: 4px;
       margin-top: -8px;

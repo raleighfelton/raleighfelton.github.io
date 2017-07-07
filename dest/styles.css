@@ -690,6 +690,9 @@ ol {
 .c-header__type--crnt {
   color: #107a94;
 }
+.c-header__type--substrate {
+  color: #0054f3;
+}
 @media screen and (min-width: 1024px) {
   .c-header__type h5 {
     margin-top: -16px;
@@ -892,6 +895,9 @@ nav a:hover {
   margin: 20px 0;
   width: 100%;
 }
+.c-portfolio__hide {
+  opacity: 0;
+}
 .c-portfolio__link img {}
 .c-portfolio__link img:hover {
   opacity: 0.9;
@@ -940,10 +946,10 @@ nav a:hover {
   color: #454348;
 }
 .c-about-content h3:first-child::first-letter {
-  font-size: 4rem;
-  margin-top: 20px;
-  margin-right: 10px;
   float: left;
+  font-size: 4rem;
+  margin-right: 10px;
+  margin-top: 20px;
 }
 .c-about-content p {
   font-size: 1rem;
