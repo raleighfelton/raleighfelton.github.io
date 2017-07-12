@@ -78,6 +78,10 @@
       color: #0054f3;
     }
 
+    &--react {
+      color: #e025f8;
+    }
+
     h5 {
       margin-left: 4px;
       margin-top: -8px;

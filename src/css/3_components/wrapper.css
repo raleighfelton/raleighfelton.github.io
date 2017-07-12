@@ -15,4 +15,8 @@
       margin: 0 auto;
     }
   }
+
+  &__react2 {
+    background: #161617;
+  }
 }

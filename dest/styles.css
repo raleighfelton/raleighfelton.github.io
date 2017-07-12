@@ -693,6 +693,9 @@ ol {
 .c-header__type--substrate {
   color: #0054f3;
 }
+.c-header__type--react {
+  color: #e025f8;
+}
 @media screen and (min-width: 1024px) {
   .c-header__type h5 {
     margin-top: -16px;
@@ -926,6 +929,9 @@ nav a:hover {
   .c-wrapper__container {
     margin: 0 auto;
   }
+}
+.c-wrapper__react2 {
+  background: #161617;
 }
 .c-stat {
   margin: 64px auto;
