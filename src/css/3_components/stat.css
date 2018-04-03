@@ -1,8 +1,14 @@
 .c-stat {
-  margin: var(--spacing-xxl) auto;
+  margin: var(--spacing-xxl) 0;
   max-width: 672px;
 
   p {
     color: var(--color-black);
+  }
+
+  &__react {
+    & p {
+      color: var(--color-grey-light);
+    }
   }
 }
