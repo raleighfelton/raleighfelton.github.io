@@ -934,11 +934,15 @@ nav a:hover {
   background: #161617;
 }
 .c-stat {
-  margin: 64px auto;
+  margin: 64px 0;
   max-width: 672px;
 }
 .c-stat p {
   color: #454348;
+}
+.c-stat__react {}
+.c-stat__react p {
+  color: #ccc;
 }
 .c-about-content {
   color: #454348;
