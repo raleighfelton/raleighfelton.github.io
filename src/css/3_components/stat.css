@@ -5,10 +5,10 @@
   p {
     color: var(--color-black);
   }
+}
 
-  &__react {
-    & p {
-      color: var(--color-grey-light);
-    }
+.react-stat {
+  p {
+    color: var(--color-grey-light);
   }
 }

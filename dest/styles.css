@@ -940,8 +940,7 @@ nav a:hover {
 .c-stat p {
   color: #454348;
 }
-.c-stat__react {}
-.c-stat__react p {
+.react-stat p {
   color: #ccc;
 }
 .c-about-content {
