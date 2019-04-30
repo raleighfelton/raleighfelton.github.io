@@ -476,6 +476,10 @@ ol {
     font-size: 16PX;
   }
 }
+.text-link {
+  background-color: #454348;
+  color: #2afd7b;
+}
 /* 3_components */
 .c-footer {
   background: #282828;

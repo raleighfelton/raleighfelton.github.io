@@ -55,3 +55,8 @@ ol {
 
   @mixin rt 12, 16, 300 1000;
 }
+
+.text-link {
+  background-color: #454348;
+  color: #2afd7b;
+}
