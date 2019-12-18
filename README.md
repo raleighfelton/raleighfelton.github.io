@@ -1,6 +1,8 @@
 # raleighfelton.com
 
 ##Run
+`npm install`
+`nvm use 9`
 `gulp watch`
 
 ##Run Atom Live Server

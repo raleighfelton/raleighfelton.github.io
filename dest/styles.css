@@ -718,36 +718,37 @@ ol {
   }
     }
 .c-home-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  padding-top: 240px;
   height: 100vh;
-  width: auto;
+  z-index: -1;
 }
 .c-home-header h1 {
   -webkit-background-clip: text;
-  background-clip: text;/*background-image: url(https://s-media-cache-ak0.pinimg.com/originals/03/2a/63/032a632818c4dd7d2237a86aeb2c073f.jpg);*/
+  background-clip: text;
   background-image: url("/images/title-bkgd-m.jpg");
   background-size: 300px;
+  font-size: 4rem;
   color: transparent;
   text-transform: uppercase
 }
 .c-home-header h3 {
   color: #22c5df;
 }
-.c-home-header__title {
-  margin: 30vh auto;
-  text-align: center;
-}
-@media screen and (min-width: 1024px) {
+@media (min-width: 576px) {
+  .c-home-header h1 {
+    font-size: 5.5rem;
+  }
+    }
+@media (min-width: 768px) {
+  .c-home-header h1 {
+    font-size: 9.375rem;
+  }
+    }
+@media (min-width: 992px) {
   .c-home-header h1 {
     background-image: url("/images/title-bkgd.jpg");
-    background-size: 500px;
-    font-size: 15.5rem;
+    background-size: 410px;
+    font-size: 14.125rem;
     margin-top: -40px;
   }
     }
@@ -839,6 +840,7 @@ nav {
   background: #282828;
   height: 100vh;
   opacity: 0.99;
+  z-index: 1;
   padding-top: 64px;
   position: fixed;
   overflow-y: scroll;
@@ -874,6 +876,8 @@ nav a {
   text-transform: uppercase;
 }
 nav a:hover {
+  color: #2afd7b;
+  text-decoration: none;
   border-bottom: 4px solid #00FF80;
 }
 @media screen and (min-width: 1025px) {
@@ -1037,6 +1041,15 @@ nav a:hover {
   font-size: 1.5rem;
   line-height: 2rem;
   padding: 16px;
+}
+.thumbs {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#work {
+  padding-bottom: 300px;
 }
 /* 5_helpers */
 /* 6_vendor_overrides */
