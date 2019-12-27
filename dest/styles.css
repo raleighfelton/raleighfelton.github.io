@@ -640,6 +640,10 @@ ol {
     margin-top: 0;
     width: 50%;
   }
+  .c-header__title--about {
+    margin-top: 300px;
+    padding-left: 46px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .c-header__title {
@@ -1105,7 +1109,14 @@ nav a:hover {
   background: #000;
 }
 .c-header__type--emanate {
-  color: #15D5F3;
+  color: #70FAF7;
+}
+/* Emanate */
+.c-wrapper__campfire {
+  background: #F8F3E9;
+}
+.c-header__type--campfire {
+  color: #FC125E;
 }
 /* 5_helpers */
 /* 6_vendor_overrides */

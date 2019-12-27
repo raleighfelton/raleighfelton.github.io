@@ -24,6 +24,11 @@
       margin-left: auto;
       margin-top: 0;
       width: 50%;
+
+      &--about {
+        margin-top: 300px;
+        padding-left: 46px;
+      }
     }
 
     @media screen and (min-width: 1200px) {
