@@ -23,5 +23,7 @@
 @import "3_components/about-content";
 /* 4_layout */
 @import "4_layout/content";
+@import "./4_layout/earnbet.css";
+@import "./4_layout/emanate.css";
 /* 5_helpers */
 /* 6_vendor_overrides */

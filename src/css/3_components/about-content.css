@@ -35,12 +35,12 @@
 
     a {
       background-color: var(--color-black);
-      color: var(--color-green);
+      color: #CAA057;
       font-family: var(--font-family-serif);
     }
 
     a:hover {
-      background-color: var(--color-green);
+      background-color: #CAA057;
       color: var(--color-black);
     }
   }
@@ -65,12 +65,12 @@
 
     a {
       background-color: var(--color-black);
-      color: var(--color-green);
+      color: #CAA057;
       font-family: var(--font-family-serif-text);
     }
 
     a:hover {
-      background-color: var(--color-green);
+      background-color: #CAA057;
       color: var(--color-black);
     }
 
@@ -78,4 +78,7 @@
       margin-top: 16px;
     }
   }
+}
+.c-about-more {
+  padding-bottom: 100px;
 }

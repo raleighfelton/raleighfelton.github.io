@@ -1,5 +1,5 @@
 .c-footer {
-  background: var(--color-darkgrey);
+  background: var(--color-black);
   bottom: 0;
   height: 100vh;
   left: 0;
@@ -52,7 +52,7 @@
   }
 
   &__title {
-    color: var(--color-green);
+    color: #CAA057;
     /*margin-bottom: var(--spacing-xl);*/
     /*margin-top: var(--spacing-xl);*/
     text-transform: uppercase;
@@ -105,7 +105,7 @@
   }
 
   a:hover {
-    color: var(--color-green);
+    color: #CAA057;
   }
 
   ul {

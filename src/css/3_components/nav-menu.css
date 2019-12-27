@@ -29,7 +29,7 @@
 
 .bar {
   &, &::before, &::after {
-    background: var(--color-black);
+    background: #CAA057;
     content: " ";
     height: 4px;
     right: 0;
@@ -63,13 +63,13 @@
     background: 0;
 
     &::before {
-      background: var(--color-green);
+      background: #CAA057;
       transform: rotate(45deg);
       width: 100%;
     }
 
     &::after {
-      background: var(--color-green);
+      background: #CAA057;
       transform: rotate(-45deg);
       width: 100%;
     }
@@ -88,10 +88,10 @@
 }
 
 nav {
-  background: #282828;
+  background: #181818;
   height: 100vh;
   opacity: 0.99;
-  z-index: 1;
+  z-index: 2;
   padding-top: 64px;
   position: fixed;
   overflow-y: scroll;
@@ -137,8 +137,8 @@ nav {
 
 
   a:hover {
-    color: var(--color-green);
+    color: #CAA057;
     text-decoration: none;
-    border-bottom: 4px solid #00FF80;
+    border-bottom: 4px solid #CAA057;
   }
 }

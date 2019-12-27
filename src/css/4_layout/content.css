@@ -21,3 +21,14 @@
 #work {
   padding-bottom: 300px;
 }
+
+.rf-logo {
+  position: absolute;
+  padding: 38px 24px;
+  top: 0;
+  left: 0;
+
+  @media (min-width: 768px) {
+    padding: 24px;
+ }
+}

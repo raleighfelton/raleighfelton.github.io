@@ -15,6 +15,9 @@
       margin: 0 auto;
     }
   }
+  &__home {
+    background: #000;
+  }
 
   &__react2 {
     background: #161617;

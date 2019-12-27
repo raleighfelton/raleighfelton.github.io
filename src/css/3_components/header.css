@@ -1,5 +1,5 @@
 .c-header {
-  background: var(--color-green);
+  background: #0e0f14;
   height: 668px;
   width: auto;
 
@@ -8,12 +8,19 @@
   }
 
   &__title {
-    color: var(--color-white);
-    float: left;
-    margin-left: 10%;
+    text-shadow: -1px 0px 13px rgb(0, 0, 0, 0.4);
+    width: 100%;
+    color: #CAA057;
+    text-align: center;
+    /* float: left; */
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 384px;
 
     @media screen and (min-width: 1024px) {
+      position:inherit;
+      text-align: left;
       margin-left: auto;
       margin-top: 0;
       width: 50%;
@@ -38,8 +45,8 @@
   }
 
   &__image {
-    background-image: url("/images/about-raleighfelton@2x.png");
-    background-position: -270px;
+    background-image: url("/images/about-raleighfelton@2x.jpg");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -58,13 +65,13 @@
   &__type {
     text-transform: uppercase;
 
-    @media screen and (min-width: 1024px) {
+    /* @media screen and (min-width: 1024px) {
       margin: 226px 5%;
     }
 
     @media screen and (min-width: 1440px) {
       margin: 226px 20%;
-    }
+    } */
 
     &--throw {
       color: #37bbc7;
@@ -94,11 +101,7 @@
 
   &__project {
     /*height: 428px;*/
-    height: 72vh;
-
-    @media screen and (min-width: 1024px) {
-      /*height: 668px;*/
-    }
+    height: 52vh;
   }
 
   h1 {

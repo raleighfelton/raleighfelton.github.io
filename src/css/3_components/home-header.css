@@ -22,13 +22,36 @@
 
     @media (min-width: 992px) {
       background-image: url("/images/title-bkgd.jpg");
-      background-size: 410px;
+      /* background-size: 410px; */
       font-size: 226px;
       margin-top: -40px;
     }
   }
 
   h3 {
-    color: var(--color-blue);
+    color: #caa057;
   }
+}
+
+.header-image {
+  position: absolute;
+  width: 300px;
+  z-index: 1;
+  left: 50%;
+   top: 50%;
+   -webkit-transform: translateX(-50%) translateY(-50%);
+   -moz-transform: translateX(-50%) translateY(-50%);
+   transform: translateX(-50%) translateY(-50%);
+
+   @media (min-width: 768px) {
+     width: 350px;
+   }
+
+   @media (min-width: 992px) {
+     width: 500px;
+   }
+
+   @media (min-width: 1800px) {
+     width: 760px;
+   }
 }
