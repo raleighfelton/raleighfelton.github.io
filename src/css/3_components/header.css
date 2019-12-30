@@ -28,6 +28,7 @@
       &--about {
         margin-top: 300px;
         padding-left: 46px;
+        font-size: 120px;
       }
     }
 
@@ -70,13 +71,6 @@
   &__type {
     text-transform: uppercase;
 
-    /* @media screen and (min-width: 1024px) {
-      margin: 226px 5%;
-    }
-
-    @media screen and (min-width: 1440px) {
-      margin: 226px 20%;
-    } */
 
     &--throw {
       color: #37bbc7;
@@ -100,6 +94,18 @@
 
       @media screen and (min-width: 1024px) {
         margin-top: -16px;
+      }
+    }
+
+    h1 {
+      font-size: 54px;
+
+      @media (min-width: 375px) {
+        font-size: 64px;
+      }
+
+      @media (min-width: 992px) {
+        font-size: 120px;
       }
     }
   }

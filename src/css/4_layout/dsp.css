@@ -1,0 +1,14 @@
+/* dsp */
+.c-wrapper__dsp {
+  background: #10131E;
+}
+
+.c-header__type--dsp {
+  color: #4859F6;
+}
+
+.dsp-stat {
+  a {
+    color: #4859F6;
+  }
+}

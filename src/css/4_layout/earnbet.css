@@ -6,3 +6,9 @@
 .c-header__type--earnbet {
   color: #3C90E7;
 }
+
+.earnbet-stat {
+  a {
+    color: #3C90E7;
+  }
+}

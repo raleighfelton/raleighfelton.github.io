@@ -29,6 +29,11 @@
   left: 0;
 
   @media (min-width: 768px) {
-    padding: 24px;
+    padding: 36px;
  }
+}
+
+.mywork-title {
+  color: #CAA057;
+  font-size: 56px;
 }

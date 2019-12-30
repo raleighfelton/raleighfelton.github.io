@@ -480,6 +480,25 @@ ol {
   background-color: #454348;
   color: #CAA057;
 }
+.blockquote p {
+  font-size: 1rem;
+  font-family: "europa", sans-serif;
+  line-height: 1.375rem
+}
+.blockquote .blockquote-footer {
+  font-size: 1rem
+}
+@media (min-width: 768px) {
+  .blockquote p {
+    line-height: 2rem;
+    font-size: 1.5rem;
+  }
+    }
+@media (min-width: 768px) {
+  .blockquote .blockquote-footer {
+    font-size: 1.25rem;
+  }
+    }
 /* 3_components */
 .c-footer {
   background: #181818;
@@ -643,6 +662,7 @@ ol {
   .c-header__title--about {
     margin-top: 300px;
     padding-left: 46px;
+    font-size: 7.5rem;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -684,16 +704,12 @@ ol {
 .c-header__type {
   text-transform: uppercase;
 }
-/* @media screen and (min-width: 1024px) {
-      margin: 226px 5%;
-    }
-
-    @media screen and (min-width: 1440px) {
-      margin: 226px 20%;
-    } */
 .c-header__type h5 {
   margin-left: 4px;
   margin-top: -8px;
+}
+.c-header__type h1 {
+  font-size: 3.375rem;
 }
 .c-header__type--throw {
   color: #37bbc7;
@@ -710,6 +726,16 @@ ol {
 @media screen and (min-width: 1024px) {
   .c-header__type h5 {
     margin-top: -16px;
+  }
+}
+@media (min-width: 375px) {
+  .c-header__type h1 {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 992px) {
+  .c-header__type h1 {
+    font-size: 7.5rem;
   }
 }
 .c-header__project {/*height: 428px;*/
@@ -977,11 +1003,8 @@ nav a:hover {
 .c-stat p {
   color: #181818;
 }
-.react-stat p, .earnbet-stat p {
+.react-stat p, .earnbet-stat p, .dsp-stat p {
   color: #ccc;
-}
-.earnbet-stat a {
-  color: #3C90E7;
 }
 .c-about-content {
   color: #181818;
@@ -1094,14 +1117,21 @@ nav a:hover {
 }
 @media (min-width: 768px) {
   .rf-logo {
-    padding: 24px;
+    padding: 36px;
   }
  }
+.mywork-title {
+  color: #CAA057;
+  font-size: 3.5rem;
+}
 /* EARNBET */
 .c-wrapper__earnbet {
   background: #152132;
 }
 .c-header__type--earnbet {
+  color: #3C90E7;
+}
+.earnbet-stat a {
   color: #3C90E7;
 }
 /* Emanate */
@@ -1117,6 +1147,16 @@ nav a:hover {
 }
 .c-header__type--campfire {
   color: #FC125E;
+}
+/* dsp */
+.c-wrapper__dsp {
+  background: #10131E;
+}
+.c-header__type--dsp {
+  color: #4859F6;
+}
+.dsp-stat a {
+  color: #4859F6;
 }
 /* 5_helpers */
 /* 6_vendor_overrides */

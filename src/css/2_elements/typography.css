@@ -60,3 +60,23 @@ ol {
   background-color: #454348;
   color: #CAA057;
 }
+
+.blockquote {
+  p {
+    font-size: 16px;
+    font-family: var(--font-family-regular);
+    line-height: 22px;
+
+    @media (min-width: 768px) {
+      line-height: 32px;
+      font-size: 24px;
+    }
+  }
+
+  .blockquote-footer {
+    font-size: 16px;
+    @media (min-width: 768px) {
+      font-size: 20px;
+    }
+  }
+}

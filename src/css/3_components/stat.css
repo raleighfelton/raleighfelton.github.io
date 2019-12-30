@@ -7,14 +7,8 @@
   }
 }
 
-.react-stat, .earnbet-stat {
+.react-stat, .earnbet-stat, .dsp-stat {
   p {
     color: var(--color-grey-light);
-  }
-}
-
-.earnbet-stat {
-  a {
-    color: #3C90E7;
   }
 }
