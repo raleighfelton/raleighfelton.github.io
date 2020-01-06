@@ -1158,5 +1158,15 @@ nav a:hover {
 .dsp-stat a {
   color: #4859F6;
 }
+/* EARNBET */
+.c-wrapper__uncompany {
+  background: #152132;
+}
+.c-header__type--uncompany {
+  color: #F56565;
+}
+.uncompany-stat a {
+  color: #3C90E7;
+}
 /* 5_helpers */
 /* 6_vendor_overrides */
