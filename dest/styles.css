@@ -1158,13 +1158,25 @@ nav a:hover {
 .dsp-stat a {
   color: #4859F6;
 }
-/* EARNBET */
+/* Uncompany */
 .c-wrapper__uncompany {
   background: #152132;
 }
-.c-header__type--uncompany {
+.c-header__type--uncompany h1, .c-header__type--uncompany {
   color: #F56565;
+  font-size: 2.875rem
+
 }
+@media (min-width: 576px) {
+  .c-header__type--uncompany h1, .c-header__type--uncompany {
+    font-size: 4rem;
+  }
+  }
+@media (min-width: 992px) {
+  .c-header__type--uncompany h1, .c-header__type--uncompany {
+    font-size: 7.5rem;
+  }
+  }
 .uncompany-stat a {
   color: #3C90E7;
 }

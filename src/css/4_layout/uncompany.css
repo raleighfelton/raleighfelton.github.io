@@ -3,8 +3,18 @@
   background: #152132;
 }
 
-.c-header__type--uncompany {
+.c-header__type--uncompany h1, .c-header__type--uncompany {
   color: #F56565;
+  font-size: 46px;
+
+  @media (min-width: 576px) {
+    font-size: 4rem;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 7.5rem;
+  }
+
 }
 
 .uncompany-stat {
