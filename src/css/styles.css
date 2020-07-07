@@ -22,11 +22,13 @@
 @import "3_components/stat";
 @import "3_components/about-content";
 /* 4_layout */
+@import "./4_layout/case-studies.css";
 @import "4_layout/content";
 @import "./4_layout/earnbet.css";
 @import "./4_layout/emanate.css";
 @import "./4_layout/campfire.css";
 @import "./4_layout/dsp.css";
 @import "./4_layout/uncompany.css";
+@import "./4_layout/momentum.css";
 /* 5_helpers */
 /* 6_vendor_overrides */

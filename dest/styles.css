@@ -671,8 +671,8 @@ ol {
   }
 }
 .c-header__title--project {
-  margin: 0 10%;
-  padding-top: 214px;
+  margin: 144px 0;
+  padding-top: 56px;
 }
 .c-header__title--project h1 {
   line-height: 2.875rem;
@@ -1180,5 +1180,25 @@ nav a:hover {
 .uncompany-stat a {
   color: #3C90E7;
 }
+/* campfire */
+.c-wrapper__momentum {
+  background: #F8F3E9;
+}
+.c-header__type--momentum {
+  color: #1E116C;
+}
+.c-header__type--momentum h1 {
+  font-size: 2.625rem
+}
+@media (min-width: 768px) {
+  .c-header__type--momentum h1 {
+    font-size: 4rem;
+  }
+    }
+@media (min-width: 992px) {
+  .c-header__type--momentum h1 {
+    font-size: 7.5rem;
+  }
+    }
 /* 5_helpers */
 /* 6_vendor_overrides */
